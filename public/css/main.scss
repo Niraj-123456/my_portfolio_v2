@@ -51,14 +51,12 @@ li {
 .hero-section {
   background-color: #6b18da;
   height: 214px;
-  position: relative;
+  display: grid;
+  text-align: center;
 }
 
 .hero-text {
-  position: absolute;
   width: 100%;
-  top: 13px;
-  left: 0px;
   font-weight: bold;
   letter-spacing: 0.1em;
 }
@@ -69,6 +67,7 @@ li {
   height: 70px;
   font-size: 18px;
   margin: auto;
+  margin-top: 13px;
   text-align: center;
   padding: 10px;
 }
@@ -78,7 +77,8 @@ li {
   font-size: 8px;
   width: 196px;
   height: 20px;
-  margin: auto;
+  margin: 0 auto;
+  // margin-top: -81px;
   padding: 10px;
   line-height: 10px;
   text-align: center;
@@ -86,4 +86,5 @@ li {
 
 .scroll-icon {
   margin: auto;
+  margin-top: 13px;
 }

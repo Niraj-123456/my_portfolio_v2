@@ -7,13 +7,7 @@ function Hero() {
         <h1>Wanna be Professional Front-end Developer</h1>
         <p>Hi, this is Niraj Lama. I am Looking for React Js Internship</p>
         <div className="scroll-icon">
-          <svg
-            width="18"
-            height="26"
-            viewBox="0 0 18 26"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg width="18" height="26" viewBox="0 0 18 26" fill="none">
             <rect
               x="1.5"
               y="1.5"
