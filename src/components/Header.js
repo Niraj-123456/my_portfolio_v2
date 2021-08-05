@@ -53,16 +53,6 @@ function Header() {
           </div>
         </header>
       </nav>
-
-      {/* Hero section */}
-
-      <div className="hero-section">
-        <div className="hero-text">
-          <h1>Wanna be Professional Front-end Developer</h1>
-          <p>Hi, this is Niraj Lama. I am Looking for React Js Internship</p>
-          <img src="" alt="" />
-        </div>
-      </div>
     </div>
   );
 }
