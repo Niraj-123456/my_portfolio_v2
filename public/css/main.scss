@@ -4,7 +4,7 @@
   height: 50px;
 }
 
-header {
+.nav-container {
   display: flex;
   align-items: center;
 }
@@ -24,7 +24,7 @@ li {
   font-weight: bold;
   display: flex;
   flex: 1;
-  margin-left: 32px;
+  margin-left: 22px;
   padding: 10px;
   letter-spacing: 0.1em;
 }
@@ -70,6 +70,7 @@ li {
   margin-top: 13px;
   text-align: center;
   padding: 10px;
+  line-height: 35px;
 }
 
 .hero-text p {
@@ -77,8 +78,7 @@ li {
   font-size: 8px;
   width: 196px;
   height: 20px;
-  margin: 0 auto;
-  // margin-top: -81px;
+  margin: 8px auto 13px auto;
   padding: 10px;
   line-height: 10px;
   text-align: center;
@@ -86,5 +86,4 @@ li {
 
 .scroll-icon {
   margin: auto;
-  margin-top: 13px;
 }

@@ -5,7 +5,7 @@ function Hero() {
     <div className="hero-section">
       <div className="hero-text">
         <h1>Wanna be Professional Front-end Developer</h1>
-        <p>Hi, this is Niraj Lama. I am Looking for React Js Internship</p>
+        <p>Hi, I'm Niraj Lama. I am Looking for React Js Internship</p>
         <div className="scroll-icon">
           <svg width="18" height="26" viewBox="0 0 18 26" fill="none">
             <rect
