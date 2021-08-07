@@ -87,3 +87,42 @@ li {
 .scroll-icon {
   margin: auto;
 }
+
+// Featured project section
+.featured {
+  text-align: center;
+  margin-top: 62px;
+}
+.featured-heading {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.featured-heading h1 {
+  font-size: 18px;
+  color: #af06ff;
+  letter-spacing: 0.15em;
+}
+
+.featured-heading h2 {
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: capitalize;
+  margin: 13px auto auto auto;
+}
+
+.featured-heading p {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 30px;
+  padding: 10px;
+  color: #3b3b3b;
+  margin: auto;
+}
+
+.featured-heading img {
+  width: 342px;
+  height: 162px;
+  border-radius: 13px;
+  margin-top: 14px;
+}
