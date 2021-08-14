@@ -170,5 +170,70 @@ li {
 
   p {
     font-size: 10px;
+    color: #3b3b3b;
   }
+}
+
+// projects section
+
+.heading {
+  color: #af06ff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.15em;
+  margin-top: 54px;
+}
+
+.project-one,
+.project-two {
+  width: 100%;
+  text-align: center;
+
+  h1 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 25px;
+    padding: 10px;
+    color: #3b3b3b;
+  }
+
+  img {
+    width: 100%;
+    height: 225px;
+  }
+}
+
+.view-more {
+  width: 100%;
+  height: 59px;
+  color: #ff45ec;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-top: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// footer section
+
+.footer {
+  width: 100%;
+  height: 38px;
+  background-color: #6700ee;
+  margin-top: 54px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.copyright {
+  margin-left: 33px;
+  font-size: 12px;
 }
