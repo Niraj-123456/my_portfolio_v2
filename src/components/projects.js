@@ -2,10 +2,10 @@ import React from "react";
 
 function Projects() {
   return (
-    <div class="projects">
-      <div class="heading">More of my projects</div>
-      <div class="project-section">
-        <div class="project-one">
+    <div className="projects">
+      <div className="heading">More of my projects</div>
+      <div className="project-section">
+        <div className="project-one">
           <h1>My first javascript app</h1>
           <p>
             Sunt id eiusmod mollit dolor fugiat deserunt. Anim aute officia
@@ -15,7 +15,7 @@ function Projects() {
           </p>
           <img src="images/javascript_screenshot.png" alt="javascript-app" />
         </div>
-        <div class="project-two">
+        <div className="project-two">
           <h1>Disney Plus Clone</h1>
           <p>
             Sunt id eiusmod mollit dolor fugiat deserunt. Anim aute officia

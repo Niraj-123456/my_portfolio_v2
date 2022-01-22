@@ -2,9 +2,9 @@ import React from "react";
 
 function Skills() {
   return (
-    <div class="container">
-      <div class="skill-section">
-        <div class="skill-one">
+    <div className="container">
+      <div className="skill-section">
+        <div className="skill-one">
           <svg
             width="46"
             height="46"
@@ -12,7 +12,7 @@ function Skills() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g clip-path="url(#clip0)">
+            <g clipPath="url(#clip0)">
               <path
                 d="M36.8795 12.8326L2.13034 17.2081C1.57866 17.2807 1.09909 17.688 0.973967 18.2025C0.846662 18.7183 1.10461 19.2067 1.60028 19.3878L16.988 25.0545L13.7151 41.1225C13.6084 41.6393 13.8893 42.1175 14.3917 42.2798C14.7319 42.3925 15.1175 42.34 15.4383 42.1612C15.5933 42.0748 15.7323 41.9598 15.8456 41.8192L37.8423 14.5649C38.1436 14.192 38.2021 13.7171 37.9949 13.3453C37.7877 12.9736 37.353 12.7736 36.8795 12.8326Z"
                 fill="#08F7E8"
@@ -37,7 +37,7 @@ function Skills() {
             nulla dolor dolor est pariatur.
           </p>
         </div>
-        <div class="skill-two">
+        <div className="skill-two">
           <svg
             width="46"
             height="46"
@@ -45,7 +45,7 @@ function Skills() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g clip-path="url(#clip0)">
+            <g clipPath="url(#clip0)">
               <path
                 d="M48.6961 19.3994L36.1904 9.19072C35.8016 8.87327 35.1135 8.87327 34.7246 9.19072L32.0134 11.404C31.6085 11.7345 31.6085 12.2704 32.0134 12.6009L41.0752 19.9975L32.0139 27.3952C31.609 27.7258 31.609 28.2617 32.0139 28.5922L34.7252 30.8055C34.9196 30.9642 35.1835 31.0539 35.4583 31.0539C35.7326 31.0539 35.997 30.9642 36.1915 30.8055L48.6961 20.5972C49.101 20.2662 49.101 19.73 48.6961 19.3994Z"
                 fill="#6B18DA"
@@ -73,7 +73,7 @@ function Skills() {
             nulla dolor dolor est pariatur.
           </p>
         </div>
-        <div class="skill-three">
+        <div className="skill-three">
           <svg
             width="46"
             height="36"

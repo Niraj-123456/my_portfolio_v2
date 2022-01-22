@@ -3,31 +3,31 @@ import React from "react";
 function Header() {
   return (
     <div>
-      <nav class="nav-container">
-        <a class="logo" href="#">
+      <nav className="nav-container">
+        <a className="logo" href="#">
           Niraj Lama
         </a>
-        <div class="main-links">
-          <ul class="nav-links">
+        <div className="main-links">
+          <ul className="nav-links">
             <li>
-              <a class="link-item" href="#">
+              <a className="link-item" href="#">
                 My Work
               </a>
             </li>
             <li>
-              <a class="link-item" href="#">
+              <a className="link-item" href="#">
                 About Me
               </a>
             </li>
             <li>
-              <a class="link-item" href="#">
+              <a className="link-item" href="#">
                 Contact Me
               </a>
             </li>
           </ul>
         </div>
-        <div class="social-links">
-          <ul class="nav-links">
+        <div className="social-links">
+          <ul className="nav-links">
             <li>
               <a className="link-item">
                 <img src="images/facebook-circular-logo.png" alt="Facebook" />

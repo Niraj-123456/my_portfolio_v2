@@ -16,7 +16,7 @@ function Hero() {
               rx="7.5"
               fill="#6B18DA"
               stroke="white"
-              stroke-width="3"
+              strokeWidth="3"
             />
             <ellipse cx="9" cy="9.86209" rx="4" ry="3.58621" fill="white" />
           </svg>
