@@ -35,28 +35,21 @@ function Navbar() {
         </ul>
       </div>
       <div className="social-links">
-        <ul className="nav-links">
-          <li>
-            <a className="link-item">
-              <img src="images/facebook-circular-logo.png" alt="Facebook" />
-            </a>
-          </li>
-          <li>
-            <a className="link-item">
-              <img src="images/instagram.svg" alt="Instagram" />
-            </a>
-          </li>
-          <li>
-            <a className="link-item">
-              <img src="images/twitter.png" alt="Twitter" />
-            </a>
-          </li>
-          <li>
-            <a className="link-item">
-              <img src="images/github.svg" alt="Github" />
-            </a>
-          </li>
-        </ul>
+        <a className="icon-link">
+          <img src="images/facebook-circular-logo.png" alt="Facebook" />
+        </a>
+
+        <a className="icon-link">
+          <img src="images/instagram.svg" alt="Instagram" />
+        </a>
+
+        <a className="icon-link">
+          <img src="images/twitter.png" alt="Twitter" />
+        </a>
+
+        <a className="icon-link">
+          <img src="images/github.svg" alt="Github" />
+        </a>
       </div>
     </nav>
   );
