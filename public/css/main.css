@@ -16,7 +16,7 @@
 .nav-container .logo {
   display: block;
   color: #08f7e8;
-  font-size: 13px;
+  font-size: 0.9rem;
   text-transform: uppercase;
   font-weight: bold;
   margin-left: 20px;
@@ -49,7 +49,7 @@
 
 .main-links .nav-links .link-item {
   display: block;
-  font-size: 11px;
+  font-size: 0.75rem;
   text-transform: uppercase;
   color: #fff;
   font-weight: bold;
@@ -160,6 +160,7 @@
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2 / 3;
+    font-size: 1.25rem;
     padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -187,6 +188,7 @@
   }
   .main-links .nav-links .link-item {
     opacity: 1;
+    font-size: 0.9rem;
   }
 }
 
@@ -198,6 +200,10 @@
   display: -ms-grid;
   display: grid;
   text-align: center;
+}
+
+.hero-section .hero-image {
+  display: none;
 }
 
 .hero-text {
@@ -231,6 +237,38 @@
 
 .scroll-icon {
   margin: auto;
+}
+
+@media screen and (min-width: 800px) {
+  .hero-section {
+    display: block;
+    width: 100%;
+    background-color: var(--primary-color);
+    height: 25em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 200px auto auto auto;
+        grid-template-columns: 200px auto auto auto;
+  }
+  .hero-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+  }
+  .hero-image h1 {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .featured {
