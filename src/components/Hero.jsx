@@ -8,7 +8,7 @@ function Hero() {
         <p>Hi, I'm Niraj Lama. I am Looking for React Js Internship</p>
       </div>
       <div className="hero-image">
-        <img src="../../public/images/avatar_1.png" alt="avatar" />
+        <img src="images/avatar_2.png" alt="avatar" />
       </div>
     </div>
   );
