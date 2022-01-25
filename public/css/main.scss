@@ -143,7 +143,7 @@
   .nav-container {
     position: fixed;
     display: grid;
-    grid-template-columns: 200px auto auto auto;
+    grid-template-columns: 200px auto auto 200px;
   }
 
   .nav-container .logo {
@@ -287,30 +287,28 @@
   grid-column: 2 / 3;
 
   h1 {
-    font-size: 18px;
+    font-size: 3rem;
     color: #af06ff;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.12rem;
   }
 
   h2 {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1.5rem;
     text-transform: capitalize;
-    margin: 13px auto auto auto;
   }
 
   p {
     font-weight: normal;
-    font-size: 12px;
-    line-height: 30px;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
     padding: 10px;
     color: #3b3b3b;
     margin: auto;
   }
 
   img {
-    width: 342px;
-    height: 162px;
+    width: 70%;
+    height: 50%;
     border-radius: 13px;
     margin-top: 14px;
   }
@@ -321,7 +319,7 @@
 .container {
   display: block;
   position: absolute;
-  top: 180%;
+  top: 240%;
   left: 0;
   width: 100%;
   height: 30em;
@@ -374,7 +372,7 @@
 // projects section
 .projects {
   position: absolute;
-  top: 265%;
+  top: 320%;
   left: 0;
   z-index: -1;
 }
@@ -384,8 +382,8 @@
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  font-size: 18px;
-  letter-spacing: 0.15em;
+  font-size: 3rem;
+  letter-spacing: 0.12rem;
   margin-top: 54px;
 }
 
@@ -431,7 +429,7 @@
 
 .footer {
   position: absolute;
-  top: 430%;
+  top: 500%;
   left: 0;
   width: 100%;
   height: 4em;
