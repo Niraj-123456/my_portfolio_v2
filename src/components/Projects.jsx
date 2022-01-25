@@ -13,7 +13,7 @@ function Projects() {
             dolore in nostrud consectetur ex proident nostrud sit id
             consectetur.
           </p>
-          <img src="images/javascript_screenshot.png" alt="javascript-app" />
+          <img src="images/javascript_pj.png" alt="javascript-app" />
         </div>
         <div className="project-two">
           <h1>Disney Plus Clone</h1>
@@ -23,10 +23,7 @@ function Projects() {
             dolore in nostrud consectetur ex proident nostrud sit id
             consectetur.
           </p>
-          <img
-            src="images/disney_plus_clone_screenshot.png"
-            alt="disney-plus-clone"
-          />
+          <img src="images/disney_plus_clone.png" alt="disney-plus-clone" />
         </div>
       </div>
 

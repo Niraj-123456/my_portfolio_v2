@@ -1,3 +1,9 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
 :root {
   --background: #6700ee;
   --primary-color: #6b18da;
@@ -7,7 +13,9 @@
 .nav-container {
   width: 100%;
   background-color: var(--background);
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
 }
 
@@ -112,7 +120,7 @@
 
 @media screen and (min-width: 800px) {
   .nav-container .logo {
-    margin: auto;
+    margin-left: 10px;
   }
 
   .nav-toggle-label {
@@ -133,6 +141,7 @@
   }
 
   .nav-container {
+    position: fixed;
     display: grid;
     grid-template-columns: 200px auto auto auto;
   }
@@ -166,12 +175,17 @@
 
 //hero section
 .hero-section {
+  position: absolute;
+  top: 9.8%;
+  left: 0;
+  bottom: 0;
+  right: 0;
   display: block;
   width: 100%;
   background-color: var(--primary-color);
-  height: 214px;
-  display: grid;
+  height: 15em;
   text-align: center;
+  z-index: -1;
 }
 
 .hero-section .hero-image {
@@ -179,6 +193,7 @@
 }
 
 .hero-text {
+  margin: 3em auto auto auto;
   width: 100%;
   font-weight: bold;
   letter-spacing: 0.1em;
@@ -187,24 +202,20 @@
 .hero-text h1 {
   color: #fff;
   width: 272px;
-  height: 70px;
   font-size: 18px;
   margin: auto;
-  margin-top: 13px;
-  text-align: center;
   padding: 10px;
-  line-height: 35px;
+  line-height: 1.3em;
 }
 
 .hero-text p {
   color: #ff45ec;
   font-size: 8px;
-  width: 196px;
+  width: 50em;
   height: 20px;
-  margin: 8px auto 13px auto;
+  margin: auto;
   padding: 10px;
-  line-height: 10px;
-  text-align: center;
+  line-height: 1.3em;
 }
 
 .scroll-icon {
@@ -213,24 +224,35 @@
 
 @media screen and (min-width: 800px) {
   .hero-section {
+    position: absolute;
+    top: 11.7%;
+    left: 0;
     width: 100%;
     background-color: var(--primary-color);
-    height: 25em;
+    height: 31em;
     display: grid;
-    grid-template-columns: 200px auto auto auto;
+    grid-template-columns: 200px 500px auto auto;
   }
 
   .hero-text {
-    margin: 0;
     grid-column: 2 / 3;
+    margin-top: 6em;
   }
 
   .hero-text h1 {
-    font-size: 3rem;
+    text-align: left;
+    width: 100%;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: 2.5rem;
   }
 
   .hero-text p {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    text-align: left;
+    width: 100%;
+    line-height: 1.5rem;
+    font-weight: lighter;
   }
 
   .hero-section .hero-image {
@@ -249,8 +271,12 @@
 
 // Featured project section
 .featured {
+  position: absolute;
+  top: 95%;
+  left: 0;
   text-align: center;
   margin-top: 62px;
+  z-index: -1;
 }
 
 .featured-heading {
@@ -290,8 +316,11 @@
 // Skills section
 
 .container {
+  display: block;
+  position: absolute;
+  top: 180%;
+  left: 0;
   width: 100%;
-  height: 725px;
   background-color: #ff45ec;
   margin-top: -25px;
   z-index: -1;
@@ -299,25 +328,21 @@
 }
 
 .skill-section {
-  width: 358px;
+  width: 100%;
   margin: auto;
-  display: block;
-  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   z-index: 1;
 }
 
 .skill-one,
 .skill-two,
 .skill-three {
-  width: 100%;
-  height: 202px;
   background: #ffffff;
   text-align: center;
   border-radius: 12px;
   line-height: 25px;
   width: 358px;
-  margin: auto;
-  margin-bottom: 30px;
 
   svg {
     margin-top: 14px;
@@ -333,7 +358,17 @@
   }
 }
 
+.skill-one {
+  grid-column: 2 / 3;
+}
+
 // projects section
+.projects {
+  position: absolute;
+  top: 230%;
+  left: 0;
+  z-index: -1;
+}
 
 .heading {
   color: #af06ff;
@@ -345,9 +380,13 @@
   margin-top: 54px;
 }
 
+.project-section {
+  width: 50%;
+  margin: auto;
+}
+
 .project-one,
 .project-two {
-  width: 100%;
   text-align: center;
 
   h1 {
@@ -362,8 +401,7 @@
   }
 
   img {
-    width: 100%;
-    height: 225px;
+    width: 20em;
   }
 }
 
@@ -383,8 +421,11 @@
 // footer section
 
 .footer {
+  position: absolute;
+  top: 410%;
+  left: 0;
   width: 100%;
-  height: 38px;
+  height: 4em;
   background-color: #6700ee;
   margin-top: 54px;
   color: #ffffff;
