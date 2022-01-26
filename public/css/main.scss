@@ -118,66 +118,6 @@
 .social-links {
   display: none;
 }
-
-@media screen and (min-width: 800px) {
-  .nav-container .logo {
-    margin-left: 10px;
-  }
-
-  .nav-toggle-label {
-    display: none;
-  }
-
-  .social-links {
-    display: flex;
-    gap: 10px;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .social-links .icon-link i {
-    font-size: 1.5rem;
-    color: var(--text-color);
-    cursor: pointer;
-  }
-
-  .social-links .icon-link i:hover {
-    font-size: 1.6rem;
-    transition: font-size 250ms ease-in-out;
-  }
-
-  .nav-container {
-    position: fixed;
-    display: grid;
-    grid-template-columns: 200px auto auto 200px;
-  }
-
-  .nav-container .logo {
-    grid-column: 2 / 3;
-    font-size: 1.25rem;
-    padding: 0;
-    display: flex;
-    align-items: center;
-  }
-
-  .main-links {
-    all: unset;
-    grid-column: 3 / 4;
-  }
-
-  .main-links .nav-links {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  .main-links .nav-links .link-item {
-    opacity: 1;
-    font-size: 0.9rem;
-  }
-}
-
 //navigation styles end here
 
 //hero section
@@ -190,7 +130,7 @@
   display: block;
   width: 100%;
   background-color: var(--primary-color);
-  height: 15em;
+  height: 18em;
   text-align: center;
   z-index: -1;
 }
@@ -229,51 +169,6 @@
   margin: auto;
 }
 
-@media screen and (min-width: 800px) {
-  .hero-section {
-    position: absolute;
-    top: 11.7%;
-    left: 0;
-    width: 100%;
-    background-color: var(--primary-color);
-    height: 31em;
-    display: grid;
-    grid-template-columns: 200px 500px auto 200px;
-  }
-
-  .hero-text {
-    grid-column: 2 / 3;
-    margin-top: 6em;
-  }
-
-  .hero-text h1 {
-    text-align: left;
-    width: 100%;
-    font-size: 2.5rem;
-    line-height: 3rem;
-    margin-bottom: 2.5rem;
-  }
-
-  .hero-text p {
-    font-size: 0.9rem;
-    text-align: left;
-    width: 100%;
-    line-height: 1.5rem;
-    font-weight: lighter;
-  }
-
-  .hero-section .hero-image {
-    display: block;
-    grid-column: 3 / 4;
-    margin: auto;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-}
-
 // hero section ends here
 
 // Featured project section
@@ -285,7 +180,7 @@
   margin-top: 62px;
   z-index: -1;
   display: grid;
-  grid-template-columns: 200px 1fr 200px;
+  grid-template-columns: 200px minmax(600px, 1fr) 200px;
 }
 
 .featured-heading {
@@ -322,7 +217,6 @@
 }
 
 // Skills section
-
 .container {
   display: block;
   position: absolute;
@@ -340,7 +234,7 @@
   height: 20em;
   margin-top: 5em;
   display: grid;
-  grid-template-columns: 200px 1fr 1fr 1fr 200px;
+  grid-template-columns: 1fr;
   z-index: 1;
 }
 
@@ -370,10 +264,6 @@
     margin: auto;
     margin-top: 2em;
   }
-}
-
-.skill-one {
-  grid-column: 2 / 3;
 }
 
 // projects section
@@ -455,4 +345,228 @@
 .copyright {
   margin-left: 33px;
   font-size: 12px;
+}
+
+//responsive css for medium devices
+@media screen and (min-width: 450px) {
+  // css for hero section starts
+  .hero-section {
+    height: 29em;
+  }
+
+  .hero-text {
+    margin-top: 4em;
+  }
+
+  .hero-text h1 {
+    width: 20em;
+    font-size: 1.7rem;
+  }
+
+  .hero-text p {
+    font-size: 0.7rem;
+    line-height: 1.1rem;
+    font-weight: lighter;
+    width: 40em;
+  }
+
+  .hero-section .hero-image {
+    margin-top: 4.5em;
+    display: block;
+  }
+
+  .hero-section .hero-image img {
+    width: 30%;
+  }
+  // css for hero section ends
+
+  //responsive featured project section starts
+  .featured {
+    display: block;
+  }
+
+  .featured-heading {
+    h1 {
+      font-size: 1.7rem;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+
+    img {
+      width: 60%;
+    }
+  }
+  //responsive featured project section ends
+
+  //responsive skills section starts
+  .container {
+    height: auto;
+  }
+
+  .skill-section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skill-one {
+    margin: 0 3em;
+  }
+
+  .skill-three {
+  }
+  //responsive skills section ends
+}
+
+@media screen and (min-width: 800px) {
+  //responsive navigation starts
+  .nav-container .logo {
+    margin-left: 10px;
+  }
+
+  .nav-toggle-label {
+    display: none;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 10px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-links .icon-link i {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+
+  .social-links .icon-link i:hover {
+    font-size: 1.6rem;
+    transition: font-size 250ms ease-in-out;
+  }
+
+  .nav-container {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 200px auto auto 200px;
+  }
+
+  .nav-container .logo {
+    grid-column: 2 / 3;
+    font-size: 1.25rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .main-links {
+    all: unset;
+    grid-column: 3 / 4;
+  }
+
+  .main-links .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .main-links .nav-links .link-item {
+    opacity: 1;
+    font-size: 0.9rem;
+  }
+  //responsive navigation ends
+
+  //responsive hero section starts
+  .hero-section {
+    position: absolute;
+    top: 11.7%;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    height: 31em;
+    display: grid;
+    grid-template-columns: 200px 500px auto 200px;
+  }
+
+  .hero-text {
+    grid-column: 2 / 3;
+    margin-top: 6em;
+  }
+
+  .hero-text h1 {
+    text-align: left;
+    width: 100%;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+    text-align: left;
+    width: 100%;
+    line-height: 1.5rem;
+    font-weight: lighter;
+  }
+
+  .hero-section .hero-image {
+    display: block;
+    grid-column: 3 / 5;
+    margin: auto;
+    margin-top: 2.5em;
+
+    img {
+      width: 100%;
+    }
+  }
+  //responsive hero section ends
+
+  //responsive skills section starts
+  .skill-section {
+    height: 20em;
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1fr 200px;
+    z-index: 1;
+  }
+
+  .skill-one,
+  .skill-two,
+  .skill-three {
+    background: #ffffff;
+    text-align: center;
+    border-radius: 12px;
+    line-height: 25px;
+    width: 275px;
+    box-shadow: -5px 9px 10px -1px rgba(117, 102, 102, 0.83);
+    -webkit-box-shadow: -5px 9px 10px -1px rgba(117, 102, 102, 0.83);
+    -moz-box-shadow: -5px 9px 10px -1px rgba(117, 102, 102, 0.83);
+
+    h1 {
+      font-size: 1.1rem;
+    }
+
+    p {
+      font-size: 0.75rem;
+      color: #3b3b3b;
+    }
+
+    .skill-content {
+      width: 14em;
+      margin: auto;
+      margin-top: 2em;
+    }
+  }
+
+  .skill-one {
+    grid-column: 2 / 3;
+  }
+
+  //responsive skills section ends
 }
