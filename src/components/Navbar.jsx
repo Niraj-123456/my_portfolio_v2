@@ -36,19 +36,19 @@ function Navbar() {
       </div>
       <div className="social-links">
         <a className="icon-link">
-          <img src="images/facebook-circular-logo.png" alt="Facebook" />
+          <i className="fab fa-facebook"></i>
         </a>
 
         <a className="icon-link">
-          <img src="images/instagram.svg" alt="Instagram" />
+          <i class="fab fa-instagram"></i>
         </a>
 
         <a className="icon-link">
-          <img src="images/twitter.png" alt="Twitter" />
+          <i class="fab fa-twitter"></i>
         </a>
 
         <a className="icon-link">
-          <img src="images/github.svg" alt="Github" />
+          <i class="fab fa-github"></i>
         </a>
       </div>
     </nav>

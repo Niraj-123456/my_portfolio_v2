@@ -9,6 +9,7 @@
   --background: #6700ee;
   --primary-color: #6b18da;
   --secondary-color: #b87aff;
+  --text-color: #ff45ec;
 }
 
 .nav-container {
@@ -158,9 +159,15 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .social-links .icon-link img {
-    width: 30px;
-    height: 30px;
+  .social-links .icon-link i {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+  .social-links .icon-link i:hover {
+    font-size: 1.6rem;
+    -webkit-transition: font-size 250ms ease-in-out;
+    transition: font-size 250ms ease-in-out;
   }
   .nav-container {
     position: fixed;
@@ -240,7 +247,7 @@
 }
 
 .hero-text p {
-  color: #ff45ec;
+  color: var(--text-color);
   font-size: 8px;
   width: 50em;
   height: 20px;
@@ -327,13 +334,13 @@
 }
 
 .featured-heading h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-transform: capitalize;
 }
 
 .featured-heading p {
   font-weight: normal;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.8rem;
   padding: 10px;
   color: #3b3b3b;
@@ -412,7 +419,7 @@
 
 .projects {
   position: absolute;
-  top: 320%;
+  top: 340%;
   left: 0;
   z-index: -1;
 }
@@ -424,11 +431,10 @@
   text-align: center;
   font-size: 3rem;
   letter-spacing: 0.12rem;
-  margin-top: 54px;
 }
 
 .project-section {
-  width: 50%;
+  width: 70%;
   margin: auto;
 }
 
@@ -439,20 +445,25 @@
 
 .project-one h1,
 .project-two h1 {
-  font-size: 18px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 .project-one p,
 .project-two p {
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 25px;
-  padding: 10px;
   color: #3b3b3b;
+  margin-bottom: 2em;
 }
 
 .project-one img,
 .project-two img {
   width: 20em;
+}
+
+.project-one {
+  margin-bottom: 7em;
 }
 
 .view-more {
@@ -476,7 +487,7 @@
 
 .footer {
   position: absolute;
-  top: 500%;
+  top: 520%;
   left: 0;
   width: 100%;
   height: 4em;
