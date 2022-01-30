@@ -8,7 +8,10 @@
   --background: #6700ee;
   --primary-color: #6b18da;
   --secondary-color: #b87aff;
-  --text-color: #ff45ec;
+  --text-white: #ffffff;
+  --text-pink: #af06ff;
+  --text-primaryColor: #000000;
+  --text-secondaryColor: #3b3b3b;
 }
 // navigation styles starts
 .nav-container {
@@ -53,7 +56,7 @@
   display: block;
   font-size: 0.75rem;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--text-white);
   font-weight: bold;
   padding: 10px 0;
   margin-left: 40px;
@@ -89,7 +92,7 @@
   width: 1.75rem;
   height: 2px;
   border-radius: 2px;
-  background: white;
+  background: var(--text-white);
 }
 
 .nav-toggle-label::before,
@@ -147,7 +150,7 @@
 }
 
 .hero-text h1 {
-  color: #fff;
+  color: var(--text-white);
   width: 272px;
   font-size: 18px;
   margin: auto;
@@ -156,7 +159,7 @@
 }
 
 .hero-text p {
-  color: var(--text-color);
+  color: var(--text-pink);
   font-size: 8px;
   width: 50em;
   height: 20px;
@@ -173,71 +176,115 @@
 
 // Featured project section
 .featured {
+  display: block;
   position: absolute;
-  top: 95%;
+  top: 60%;
   left: 0;
   text-align: center;
-  margin-top: 62px;
   z-index: -1;
-  // display: grid;
-  // grid-template-columns: 200px minmax(600px, 1fr) 200px;
 }
 
-// .featured-heading {
-//   font-weight: bold;
-//   font-style: normal;
-//   grid-column: 2 / 3;
+.featured-heading {
+  font-weight: bold;
+  font-style: normal;
+  grid-column: 2 / 3;
 
-//   h1 {
-//     font-size: 3rem;
-//     color: #af06ff;
-//     letter-spacing: 0.12rem;
-//   }
+  h1 {
+    font-size: 1.5rem;
+    color: var(--text-pink);
+    letter-spacing: 0.12rem;
+  }
 
-//   h2 {
-//     font-size: 1.2rem;
-//     text-transform: capitalize;
-//   }
+  h2 {
+    font-size: 0.9rem;
+    text-transform: capitalize;
+  }
 
-//   p {
-//     font-weight: normal;
-//     font-size: 1rem;
-//     line-height: 1.8rem;
-//     padding: 10px;
-//     color: #3b3b3b;
-//     margin: auto;
-//   }
+  p {
+    font-weight: normal;
+    font-size: 0.8rem;
+    line-height: 1.8rem;
+    padding: 10px;
+    color: var(--text-secondaryColor);
+    margin: auto;
+  }
 
-//   img {
-//     width: 70%;
-//     height: 50%;
-//     border-radius: 13px;
-//     margin-top: 14px;
-//   }
-// }
+  img {
+    width: 90%;
+    height: 50%;
+    border-radius: 13px;
+    margin-top: 14px;
+  }
+}
 
 // Skills section
+.container {
+  position: absolute;
+  top: 160%;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  z-index: -1;
+}
+
+.skill-section {
+  display: block;
+  height: 100%;
+  margin-top: 2.5em;
+  margin-bottom: 2em;
+  z-index: 1;
+}
+
+.skill-one,
+.skill-two,
+.skill-three {
+  margin: auto;
+  margin-bottom: 1em;
+  background-color: var(--text-white);
+  text-align: center;
+  border-radius: 12px;
+  line-height: 25px;
+  width: 60%;
+  box-shadow: -5px 9px 10px -1px rgba(117, 102, 102, 0.83);
+  -webkit-box-shadow: -5px 9px 10px -1px rgba(117, 102, 102, 0.83);
+  -moz-box-shadow: -5px 9px 10px -1px rgba(117, 102, 102, 0.83);
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.65rem;
+    color: #3b3b3b;
+  }
+}
+
+.skill-content {
+  width: 14em;
+  margin-inline: auto;
+  padding-block: 1em;
+}
 
 // projects section
 .projects {
   position: absolute;
-  top: 340%;
+  top: 315%;
   left: 0;
   z-index: -1;
 }
 
 .heading {
-  color: #af06ff;
+  color: var(--text-pink);
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  font-size: 3rem;
+  font-size: 1.5rem;
   letter-spacing: 0.12rem;
 }
 
 .project-section {
-  width: 70%;
-  margin: auto;
+  width: 80%;
+  margin: 2em auto;
 }
 
 .project-one,
@@ -245,20 +292,19 @@
   text-align: center;
 
   h1 {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
   }
 
   p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 25px;
-    // padding: 10px;
-    color: #3b3b3b;
+    color: var(--text-secondaryColor);
     margin-bottom: 2em;
   }
 
   img {
-    width: 20em;
+    width: 18em;
   }
 }
 
@@ -269,7 +315,7 @@
 .view-more {
   width: 100%;
   height: 59px;
-  color: #ff45ec;
+  color: var(--text-pink);
   font-size: 15px;
   font-weight: bold;
   text-transform: capitalize;
@@ -283,7 +329,7 @@
 
 .footer {
   position: absolute;
-  top: 520%;
+  top: 500%;
   left: 0;
   width: 100%;
   height: 4em;
@@ -334,6 +380,7 @@
 
   //responsive featured project section starts
   .featured {
+    top: 100%;
     display: block;
   }
 
@@ -357,27 +404,44 @@
   //responsive featured project section ends
 
   //responsive skills section starts
-  // .container {
-  //   height: auto;
-  // }
+  .container {
+    top: 200%;
+  }
 
   .skill-section {
-    grid-template-columns: 1fr 1fr;
+    display: block;
   }
 
-  // .skill-one {
-  //   margin: 0 3em;
-  // }
-
+  .skill-one,
+  .skill-two,
   .skill-three {
+    width: 50%;
+  }
+
+  .skill-content {
+    width: 23em;
+    margin-inline: auto;
+    padding-block: 1em;
   }
   //responsive skills section ends
+
+  //responsive projects section starts
+  .projects {
+    top: 360%;
+  }
+  //responsive projects section ends
+
+  //responsive footer section starts
+  .footer {
+    top: 530%;
+  }
+  //responsive footer section ends
 }
 
 @media screen and (min-width: 800px) {
-  //responsive navigation starts
+  // navigation starts
   .nav-container .logo {
-    margin-left: 10px;
+    margin-left: 45px;
   }
 
   .nav-toggle-label {
@@ -406,7 +470,7 @@
   .nav-container {
     position: fixed;
     display: grid;
-    grid-template-columns: 200px auto auto 200px;
+    grid-template-columns: auto auto auto auto;
   }
 
   .nav-container .logo {
@@ -432,9 +496,9 @@
     opacity: 1;
     font-size: 0.9rem;
   }
-  //responsive navigation ends
+  // navigation ends
 
-  //responsive hero section starts
+  // hero section starts
   .hero-section {
     position: absolute;
     top: 11.7%;
@@ -443,7 +507,7 @@
     background-color: var(--primary-color);
     height: 31em;
     display: grid;
-    grid-template-columns: 200px 500px auto 200px;
+    grid-template-columns: auto 500px auto auto;
   }
 
   .hero-text {
@@ -477,7 +541,7 @@
       width: 100%;
     }
   }
-  //responsive hero section ends
+  // hero section ends
 
   //featured project section starts
   .featured {
@@ -519,23 +583,21 @@
   }
   //featured project section ends
 
-  //responsive skills section starts
+  // skills section starts
   .container {
-    display: block;
-    position: absolute;
-    top: 240%;
-    left: 0;
-    width: 100%;
+    top: 210%;
     height: 30em;
-    background-color: #ff45ec;
+    background-color: var(--primary-color);
     z-index: -1;
   }
 
   .skill-section {
+    margin-inline: auto;
+    width: 80%;
     height: 20em;
     margin-top: 5em;
     display: grid;
-    grid-template-columns: 200px 1fr 1fr 1fr 200px;
+    grid-template-columns: auto 1fr 1fr 1fr auto;
     z-index: 1;
   }
 
@@ -557,7 +619,7 @@
 
     p {
       font-size: 0.75rem;
-      color: #3b3b3b;
+      color: var(--text-secondaryColor);
     }
 
     .skill-content {
@@ -570,6 +632,39 @@
   .skill-one {
     grid-column: 2 / 3;
   }
+  // skills section ends
 
-  //responsive skills section ends
+  // project section starts
+  .projects {
+    top: 300%;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .project-one,
+  .project-two {
+    h1 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    img {
+      width: 50%;
+    }
+  }
+
+  // project section ends
+
+  //footer section starts
+
+  .footer {
+    top: 550%;
+  }
+
+  //footer section ends
 }
