@@ -28,9 +28,11 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a className="link-item" href="#">
-              Contact Me
-            </a>
+            <button>
+              <a className="link-item" href="#">
+                Contact Me
+              </a>
+            </button>
           </li>
         </ul>
       </div>

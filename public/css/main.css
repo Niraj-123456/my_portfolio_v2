@@ -66,11 +66,15 @@
   text-transform: uppercase;
   color: var(--text-white);
   font-weight: bold;
-  padding: 10px 0;
-  margin-left: 40px;
+  padding: 10px;
+  margin-inline: 10px;
   opacity: 0;
   -webkit-transition: opacity 150ms ease-in-out;
   transition: opacity 150ms ease-in-out;
+}
+
+.main-links .nav-links li button {
+  all: unset;
 }
 
 .main-links .nav-links li:active {
@@ -459,15 +463,19 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .social-links .icon-link {
+    margin-left: 0.5em;
+  }
   .social-links .icon-link i {
     font-size: 1.5rem;
-    color: var(--text-color);
+    color: var(--text-white);
     cursor: pointer;
+    opacity: 0.8;
   }
   .social-links .icon-link i:hover {
-    font-size: 1.6rem;
-    -webkit-transition: font-size 250ms ease-in-out;
-    transition: font-size 250ms ease-in-out;
+    -webkit-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+    opacity: 1;
   }
   .nav-container {
     position: fixed;
@@ -509,6 +517,16 @@
   .main-links .nav-links .link-item {
     opacity: 1;
     font-size: 0.9rem;
+  }
+  .main-links .nav-links li:hover {
+    all: unset;
+  }
+  .main-links .nav-links li button {
+    color: var(--text-primaryColor);
+    background-color: var(--text-pink);
+    outline: none;
+    border: 0;
+    border-radius: 4px;
   }
   .hero-section {
     position: absolute;
