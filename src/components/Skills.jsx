@@ -3,6 +3,7 @@ import React from "react";
 function Skills() {
   return (
     <div className="container">
+      <h1 className="skill-heading">What I Know</h1>
       <div className="skill-section">
         <div className="skill-one">
           <div className="skill-content">

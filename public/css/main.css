@@ -8,6 +8,7 @@
 :root {
   --background: #6700ee;
   --primary-color: #6b18da;
+  --color-logo: #08f7e8;
   --secondary-color: #b87aff;
   --text-white: #ffffff;
   --text-pink: #af06ff;
@@ -28,7 +29,7 @@
 
 .nav-container .logo {
   display: block;
-  color: #08f7e8;
+  color: var(--color-logo);
   font-size: 0.9rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -181,7 +182,7 @@
 }
 
 .hero-text p {
-  color: var(--text-pink);
+  color: var(--text-white);
   font-size: 8px;
   width: 50em;
   height: 20px;
@@ -243,7 +244,6 @@
   top: 160%;
   left: 0;
   width: 100%;
-  background-color: var(--primary-color);
   z-index: -1;
 }
 
@@ -422,6 +422,9 @@
   .container {
     top: 200%;
   }
+  .skill-heading {
+    text-align: center;
+  }
   .skill-section {
     display: block;
   }
@@ -445,7 +448,7 @@
 
 @media screen and (min-width: 800px) {
   .nav-container .logo {
-    margin-left: 45px;
+    margin-left: 55px;
   }
   .nav-toggle-label {
     display: none;
@@ -528,8 +531,7 @@
     all: unset;
   }
   .main-links .nav-links li button {
-    color: var(--text-primaryColor);
-    background-color: var(--text-secondaryColor);
+    background-color: var(--color-logo);
     outline: none;
     opacity: 0.9;
     border: 0;
@@ -567,28 +569,57 @@
     -ms-grid-column-span: 1;
     grid-column: 2 / 3;
     margin-top: 6em;
-  }
-  .hero-text h1 {
     text-align: left;
     width: 100%;
+  }
+  .hero-text h1 {
     font-size: 2.5rem;
     line-height: 3rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 0.5rem;
   }
   .hero-text p {
     font-size: 0.9rem;
-    text-align: left;
-    width: 100%;
     line-height: 1.5rem;
     font-weight: lighter;
+  }
+  .hero-text .contact {
+    margin-top: 8.5em;
+  }
+  .hero-text button {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    outline: none;
+    border: 0;
+    padding: 1.2em;
+    margin-right: 1.5em;
+    width: 10em;
+    border-radius: 30px;
+    color: var(--text-pink);
+    -webkit-transition: -webkit-transform 250ms ease-in-out 100ms;
+    transition: -webkit-transform 250ms ease-in-out 100ms;
+    transition: transform 250ms ease-in-out 100ms;
+    transition: transform 250ms ease-in-out 100ms, -webkit-transform 250ms ease-in-out 100ms;
+    box-shadow: -11px 12px 41px -5px rgba(0, 0, 0, 0.62);
+    -webkit-box-shadow: -11px 12px 41px -5px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow: -11px 12px 41px -5px rgba(0, 0, 0, 0.62);
+  }
+  .hero-text button:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-transition: -webkit-transform 250ms ease-in-out;
+    transition: -webkit-transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
   }
   .hero-section .hero-image {
     display: block;
     -ms-grid-column: 3;
     -ms-grid-column-span: 2;
     grid-column: 3 / 5;
-    margin: auto;
-    margin-top: 2.5em;
+    margin-inline: auto;
+    margin-top: 5em;
   }
   .hero-section .hero-image img {
     width: 100%;
@@ -630,26 +661,33 @@
     margin-top: 14px;
   }
   .container {
+    display: block;
     top: 210%;
-    height: 30em;
-    background-color: var(--primary-color);
+    width: 100%;
     z-index: -1;
   }
+  .skill-heading {
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--text-pink);
+    font-size: 2.5rem;
+    letter-spacing: 0.12rem;
+  }
   .skill-section {
-    margin-inline: auto;
-    width: 80%;
-    height: 20em;
-    margin-top: 5em;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 30em;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto 1fr 1fr 1fr auto;
-        grid-template-columns: auto 1fr 1fr 1fr auto;
+    -ms-grid-columns: 1fr 350px 350px 350px 1fr;
+        grid-template-columns: 1fr 350px 350px 350px 1fr;
     z-index: 1;
   }
   .skill-one,
   .skill-two,
   .skill-three {
-    background: #ffffff;
+    margin-block: 5em;
+    background: var(--text-white);
     text-align: center;
     border-radius: 12px;
     line-height: 25px;
@@ -662,6 +700,7 @@
   .skill-two h1,
   .skill-three h1 {
     font-size: 1.1rem;
+    margin-block: 1em;
   }
   .skill-one p,
   .skill-two p,
@@ -673,8 +712,6 @@
   .skill-two .skill-content,
   .skill-three .skill-content {
     width: 14em;
-    margin: auto;
-    margin-top: 2em;
   }
   .skill-one {
     -ms-grid-column: 2;
@@ -682,7 +719,7 @@
     grid-column: 2 / 3;
   }
   .projects {
-    top: 300%;
+    top: 320%;
   }
   .heading {
     font-size: 2.5rem;

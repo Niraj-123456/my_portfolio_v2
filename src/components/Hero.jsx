@@ -10,6 +10,10 @@ function Hero() {
           Currently, Working as a digital marketer but looking internship in
           React Js to start a career as React Js developer.
         </p>
+        <div className="contact">
+          <button>Contact Me</button>
+          <button>Hire Me!</button>
+        </div>
       </div>
       <div className="hero-image">
         <img src="images/avatar_2.png" alt="avatar" />
