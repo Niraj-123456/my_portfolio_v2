@@ -1,4 +1,5 @@
 import React from "react";
+import Buttons from "../common/buttons";
 
 function Featured() {
   return (
@@ -18,6 +19,7 @@ function Featured() {
           alt="featured-project"
         />
       </div>
+      <Buttons />
     </div>
   );
 }

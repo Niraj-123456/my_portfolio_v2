@@ -1,4 +1,5 @@
 import React from "react";
+import Buttons from "../common/buttons";
 
 function Projects() {
   return (
@@ -14,6 +15,7 @@ function Projects() {
             consectetur.
           </p>
           <img src="images/javascript_pj.png" alt="javascript-app" />
+          <Buttons />
         </div>
         <div className="project-two">
           <h1>Disney Plus Clone</h1>

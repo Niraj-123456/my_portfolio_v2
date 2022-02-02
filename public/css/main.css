@@ -662,7 +662,7 @@
   }
   .container {
     display: block;
-    top: 210%;
+    top: 220%;
     width: 100%;
     z-index: -1;
   }
@@ -719,7 +719,7 @@
     grid-column: 2 / 3;
   }
   .projects {
-    top: 320%;
+    top: 330%;
   }
   .heading {
     font-size: 2.5rem;
@@ -737,7 +737,7 @@
     width: 50%;
   }
   .footer {
-    top: 550%;
+    top: 590%;
   }
 }
 /*# sourceMappingURL=main.css.map */
