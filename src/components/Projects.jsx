@@ -26,10 +26,13 @@ function Projects() {
             consectetur.
           </p>
           <img src="images/disney_plus_clone.png" alt="disney-plus-clone" />
+          <Buttons />
         </div>
       </div>
 
-      <div className="view-more">View More...</div>
+      <div className="view-more">
+        <a href="#">View More...</a>
+      </div>
     </div>
   );
 }

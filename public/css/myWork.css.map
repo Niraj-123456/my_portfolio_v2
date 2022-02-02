@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACX,QAAQ,EAAE,QAAQ;EAClB,IAAI,EAAE,CAAC;EACP,GAAG,EAAE,GAAG;CACT",
+    "sources": [
+        "myWork.scss"
+    ],
+    "names": [],
+    "file": "myWork.css"
+}
