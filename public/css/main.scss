@@ -130,11 +130,6 @@
 
 //hero section
 .hero-section {
-  position: absolute;
-  top: 9.8%;
-  left: 0;
-  bottom: 0;
-  right: 0;
   display: block;
   width: 100%;
   background-color: var(--primary-color);
@@ -182,14 +177,11 @@
 // Featured project section
 .featured {
   display: block;
-  position: absolute;
-  top: 60%;
-  left: 0;
   text-align: center;
   z-index: -1;
 }
 
-.featured-heading {
+.featured-wrapper {
   font-weight: bold;
   font-style: normal;
   grid-column: 2 / 3;
@@ -224,9 +216,6 @@
 
 // Skills section
 .container {
-  position: absolute;
-  top: 160%;
-  left: 0;
   width: 100%;
   z-index: -1;
 }
@@ -271,9 +260,6 @@
 
 // projects section
 .projects {
-  position: absolute;
-  top: 315%;
-  left: 0;
   z-index: -1;
 }
 
@@ -316,41 +302,9 @@
   margin-bottom: 10em;
 }
 
-.view-more {
-  width: 100%;
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: capitalize;
-  margin-top: 12em;
-  text-align: center;
-}
-
-.view-more a {
-  color: var(--text-pink);
-}
-
-.view-more a:hover {
-  color: var(--text-secondaryColor);
-}
-
-// footer section
-
+//footer section
 .footer {
-  position: absolute;
-  top: 500%;
-  left: 0;
-  width: 100%;
-  height: 4em;
-  background-color: #6700ee;
-  margin-top: 54px;
-  color: #ffffff;
   display: flex;
-  align-items: center;
-}
-
-.copyright {
-  margin-left: 33px;
-  font-size: 12px;
 }
 
 //responsive css for medium devices
@@ -388,7 +342,6 @@
 
   //responsive featured project section starts
   .featured {
-    top: 100%;
     display: block;
   }
 
@@ -412,9 +365,6 @@
   //responsive featured project section ends
 
   //responsive skills section starts
-  .container {
-    top: 200%;
-  }
 
   .skill-heading {
     text-align: center;
@@ -438,22 +388,32 @@
   //responsive skills section ends
 
   //responsive projects section starts
-  .projects {
-    top: 360%;
-  }
+
   //responsive projects section ends
 
   //responsive footer section starts
-  .footer {
-    top: 530%;
-  }
+
   //responsive footer section ends
 }
 
 @media screen and (min-width: 800px) {
   // navigation starts
+  .nav-container {
+    z-index: 9999;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+
   .nav-container .logo {
     margin-left: 55px;
+  }
+
+  .nav-container .logo {
+    grid-column: 2 / 3;
+    font-size: 1.25rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
   }
 
   .nav-toggle-label {
@@ -482,20 +442,6 @@
   .social-links .icon-link i:hover {
     transform: scale(1.2);
     transition: transform 250ms ease-in-out;
-  }
-
-  .nav-container {
-    z-index: 1;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-  }
-
-  .nav-container .logo {
-    grid-column: 2 / 3;
-    font-size: 1.25rem;
-    padding: 0;
-    display: flex;
-    align-items: center;
   }
 
   .main-links {
@@ -540,13 +486,14 @@
   .homeWrapper {
     height: 100vh;
     width: 100%;
-    position: relative;
+    position: absolute;
+    top: 11.7%;
+    left: 0;
   }
   //home wrapper ends
 
   // hero section starts
   .hero-section {
-    top: 11.7%;
     width: 100%;
     background-color: var(--primary-color);
     height: 31em;
@@ -615,11 +562,13 @@
 
   //featured project section starts
   .featured {
+    margin-top: 8em;
     display: grid;
     grid-template-columns: 200px minmax(600px, 1fr) 200px;
   }
 
-  .featured-heading {
+  .featured-wrapper {
+    position: relative;
     font-weight: bold;
     font-style: normal;
     grid-column: 2 / 3;
@@ -655,8 +604,7 @@
 
   // skills section starts
   .container {
-    display: block;
-    top: 220%;
+    margin-top: 12em;
     width: 100%;
     z-index: -1;
   }
@@ -714,7 +662,7 @@
 
   // project section starts
   .projects {
-    top: 330%;
+    margin-top: 8em;
   }
 
   .heading {
@@ -738,12 +686,41 @@
     }
   }
 
+  .view-more {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: 12em;
+    text-align: center;
+  }
+
+  .view-more a {
+    color: var(--text-pink);
+  }
+
+  .view-more a:hover {
+    color: var(--text-secondaryColor);
+  }
+
   // project section ends
 
   //footer section starts
-
   .footer {
-    top: 600%;
+    position: absolute;
+    top: 630%;
+    left: 0;
+    width: 100%;
+    height: 4em;
+    background-color: #6700ee;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+  }
+
+  .copyright {
+    margin-left: 33px;
+    font-size: 12px;
   }
 
   //footer section ends

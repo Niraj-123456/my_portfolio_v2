@@ -4,7 +4,7 @@ import Buttons from "../common/buttons";
 function Featured() {
   return (
     <div className="featured">
-      <div className="featured-heading">
+      <div className="featured-wrapper">
         <h1>Featured Project</h1>
         <h2>Social Media App (My Version Of Facebook)</h2>
         <p>
@@ -18,8 +18,8 @@ function Featured() {
           src="images/social_media_app_screenshot.jpg"
           alt="featured-project"
         />
+        <Buttons />
       </div>
-      <Buttons />
     </div>
   );
 }

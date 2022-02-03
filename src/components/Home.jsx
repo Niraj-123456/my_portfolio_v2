@@ -6,12 +6,12 @@ import Projects from "./Projects";
 
 function Home() {
   return (
-    <div className="homeWrapper">
+    <main className="homeWrapper">
       <Hero />
       <Featured />
       <Skills />
       <Projects />
-    </div>
+    </main>
   );
 }
 
