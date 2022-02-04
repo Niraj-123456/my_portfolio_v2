@@ -483,7 +483,7 @@
   // navigation ends
 
   //home wrapper starts
-  .homeWrapper {
+  .home-wrapper {
     height: auto;
     width: 100%;
     margin-top: 4.95em;
@@ -555,6 +555,7 @@
 
     img {
       width: 100%;
+      object-fit: cover;
     }
   }
   // hero section ends
@@ -593,10 +594,10 @@
     }
 
     img {
-      width: 70%;
-      height: 50%;
-      border-radius: 13px;
+      width: 700px;
+      height: 400px;
       margin-top: 14px;
+      object-fit: cover;
     }
   }
   //featured project section ends
@@ -681,7 +682,9 @@
     }
 
     img {
-      width: 50%;
+      width: 500px;
+      height: 400px;
+      object-fit: cover;
     }
   }
 

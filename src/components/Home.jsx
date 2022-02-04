@@ -6,7 +6,7 @@ import Projects from "./Projects";
 
 function Home() {
   return (
-    <main className="homeWrapper">
+    <main className="home-wrapper">
       <Hero />
       <Featured />
       <Skills />

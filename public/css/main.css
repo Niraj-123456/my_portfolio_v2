@@ -492,7 +492,7 @@
     transition: transform 250ms ease-in-out;
     transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
   }
-  .homeWrapper {
+  .home-wrapper {
     height: auto;
     width: 100%;
     margin-top: 4.95em;
@@ -567,6 +567,8 @@
   }
   .hero-section .hero-image img {
     width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .featured {
     margin-top: 8em;
@@ -601,10 +603,11 @@
     margin: auto;
   }
   .featured-wrapper img {
-    width: 70%;
-    height: 50%;
-    border-radius: 13px;
+    width: 700px;
+    height: 400px;
     margin-top: 14px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .container {
     margin-top: 12em;
@@ -683,7 +686,10 @@
   }
   .project-one img,
   .project-two img {
-    width: 50%;
+    width: 500px;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .view-more {
     width: 100%;

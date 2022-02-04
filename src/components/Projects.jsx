@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Buttons from "./common/buttons";
 
 function Projects() {
@@ -31,7 +32,7 @@ function Projects() {
       </div>
 
       <div className="view-more">
-        <a href="#">View More...</a>
+        <Link to="portfolio">View More...</Link>
       </div>
     </div>
   );

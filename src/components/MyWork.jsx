@@ -3,7 +3,7 @@ import Buttons from "./common/buttons";
 
 function MyWork() {
   return (
-    <main className="homeWrapper">
+    <main className="home-wrapper">
       <div className="project-wrapper">
         <div className="project-card">
           <img src="images/javascript_pj.png" alt="" />

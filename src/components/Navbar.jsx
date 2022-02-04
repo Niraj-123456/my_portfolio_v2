@@ -19,7 +19,7 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <Link className="link-item" to="mywork">
+            <Link className="link-item" to="portfolio">
               My Work
             </Link>
           </li>
@@ -30,9 +30,9 @@ function Navbar() {
           </li>
           <li>
             <button>
-              <a className="link-item" href="#">
+              <Link className="link-item" to="contact">
                 Contact Me
-              </a>
+              </Link>
             </button>
           </li>
         </ul>
