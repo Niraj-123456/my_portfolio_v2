@@ -1,5 +1,5 @@
 import React from "react";
-import Buttons from "../common/buttons";
+import Buttons from "./common/buttons";
 
 function Projects() {
   return (

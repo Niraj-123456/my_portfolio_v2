@@ -4,7 +4,7 @@ function Buttons() {
   return (
     <div className="btn-container">
       <button>View Project</button>
-      <button>View Source Code</button>
+      <button>Source Code</button>
     </div>
   );
 }
