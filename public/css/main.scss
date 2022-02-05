@@ -425,7 +425,8 @@
     gap: 10px;
     height: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-left: 1.5em;
   }
 
   .social-links .icon-link {
@@ -460,8 +461,12 @@
     font-size: 0.9rem;
   }
 
+  .main-links .nav-links li:last-child {
+    margin-left: 3em;
+  }
+
   .main-links .nav-links li:hover {
-    all: unset;
+    background-color: transparent;
   }
 
   .main-links .nav-links li button {

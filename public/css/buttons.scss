@@ -3,18 +3,19 @@
   top: 100%;
   left: 0;
   width: 100%;
+  text-align: center;
 }
 
 .btn-container button {
   margin-inline: 0.8em;
   margin-block: 3em;
-  width: 13em;
+  width: 11em;
   outline: none;
   border: 0;
   padding: 1em;
   background: var(--primary-color);
   color: var(--text-white);
-  font-size: 1rem;
+  font-size: 0.7rem;
   letter-spacing: 0.1rem;
   border-radius: 30px;
   transition: transform 250ms ease-in-out 100ms;
