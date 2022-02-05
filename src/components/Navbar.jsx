@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -13,26 +13,26 @@ function Navbar() {
       </label>
       <div className="main-links">
         <ul className="nav-links">
-          <li className="active">
-            <a className="link-item" href="#">
+          <li>
+            <NavLink className="link-item" to="/">
               Home
-            </a>
+            </NavLink>
           </li>
           <li>
-            <Link className="link-item" to="portfolio">
+            <NavLink className="link-item" to="/portfolio">
               My Work
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <a className="link-item" href="#">
+            <NavLink className="link-item" to="/aboutme">
               About Me
-            </a>
+            </NavLink>
           </li>
           <li>
             <button>
-              <Link className="link-item" to="contact">
+              <NavLink className="link-item" to="/contact">
                 Contact Me
-              </Link>
+              </NavLink>
             </button>
           </li>
         </ul>
@@ -43,15 +43,15 @@ function Navbar() {
         </a>
 
         <a className="icon-link">
-          <i class="fab fa-instagram"></i>
+          <i className="fab fa-instagram"></i>
         </a>
 
         <a className="icon-link">
-          <i class="fab fa-twitter"></i>
+          <i className="fab fa-twitter"></i>
         </a>
 
         <a className="icon-link">
-          <i class="fab fa-github"></i>
+          <i className="fab fa-github"></i>
         </a>
       </div>
     </nav>
