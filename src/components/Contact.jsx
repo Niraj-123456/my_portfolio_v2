@@ -4,7 +4,14 @@ function Contact() {
   return (
     <main className="home-wrapper">
       <div className="contact">
-        <div className="content">Let's get in touch</div>
+        <div className="content">
+          <h1>Let's get in touch</h1>
+          <p>
+            Hi there! What's up? If you are looking for a React js intern and if
+            you like my work, please feel free to contact me via the form on the
+            right. I would be happy to get in touch with you. Thank you!
+          </p>
+        </div>
         <div className="contact-form">
           <form action="#">
             <h2>Send a message</h2>

@@ -3,18 +3,30 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  margin: auto;
   margin-top: 10em;
+  width: 85%;
 }
 
 .content {
   display: -ms-grid;
   display: grid;
-  -ms-flex-line-pack: center;
-      align-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  text-align: start;
+  width: 80%;
+  margin-inline: auto;
+}
+
+.content h1 {
   font-size: 2rem;
+}
+
+.content p {
+  font-size: 1rem;
 }
 
 .contact-form {
@@ -45,11 +57,12 @@
   border: 0;
   outline: none;
   margin: 1.5em 0;
-  padding: 1em 1.5em;
+  padding: 0.7em 1.5em;
   border-bottom: 2px solid var(--primary-color);
   display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background: transparent;
 }
 
 .contact-form form button {
