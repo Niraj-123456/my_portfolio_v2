@@ -10,7 +10,7 @@ function Hero() {
           Currently, Working as a digital marketer but looking internship in
           React Js to start a career as React Js developer.
         </p>
-        <div className="contact">
+        <div className="contact-button">
           <button>Contact Me</button>
           <button>Hire Me!</button>
         </div>

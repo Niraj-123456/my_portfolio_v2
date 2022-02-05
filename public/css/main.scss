@@ -519,31 +519,31 @@
       font-weight: lighter;
     }
 
-    .contact {
+    .contact-button {
       margin-top: 8.5em;
-    }
 
-    button {
-      font-size: 1rem;
-      font-weight: 600;
-      letter-spacing: 0.1rem;
-      outline: none;
-      border: 0;
-      padding: 1.2em;
-      margin-right: 1.5em;
-      width: 10em;
-      border-radius: 30px;
-      color: var(--text-pink);
-      transition: transform 250ms ease-in-out 100ms;
-      box-shadow: -11px 12px 41px -5px rgba(0, 0, 0, 0.62);
-      -webkit-box-shadow: -11px 12px 41px -5px rgba(0, 0, 0, 0.62);
-      -moz-box-shadow: -11px 12px 41px -5px rgba(0, 0, 0, 0.62);
-    }
+      button {
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        outline: none;
+        border: 0;
+        padding: 1.2em;
+        margin-right: 1em;
+        width: 10em;
+        border-radius: 30px;
+        color: var(--text-pink);
+        transition: transform 250ms ease-in-out 100ms;
+        box-shadow: -11px 12px 41px -5px rgba(0, 0, 0, 0.62);
+        -webkit-box-shadow: -11px 12px 41px -5px rgba(0, 0, 0, 0.62);
+        -moz-box-shadow: -11px 12px 41px -5px rgba(0, 0, 0, 0.62);
+      }
 
-    button:hover {
-      cursor: pointer;
-      transform: scale(1.05);
-      transition: transform 250ms ease-in-out;
+      button:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: transform 250ms ease-in-out;
+      }
     }
   }
 

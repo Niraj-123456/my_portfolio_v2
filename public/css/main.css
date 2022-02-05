@@ -526,17 +526,17 @@
     line-height: 1.5rem;
     font-weight: lighter;
   }
-  .hero-text .contact {
+  .hero-text .contact-button {
     margin-top: 8.5em;
   }
-  .hero-text button {
+  .hero-text .contact-button button {
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
     outline: none;
     border: 0;
     padding: 1.2em;
-    margin-right: 1.5em;
+    margin-right: 1em;
     width: 10em;
     border-radius: 30px;
     color: var(--text-pink);
@@ -548,7 +548,7 @@
     -webkit-box-shadow: -11px 12px 41px -5px rgba(0, 0, 0, 0.62);
     -moz-box-shadow: -11px 12px 41px -5px rgba(0, 0, 0, 0.62);
   }
-  .hero-text button:hover {
+  .hero-text .contact-button button:hover {
     cursor: pointer;
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
