@@ -1,0 +1,29 @@
+.about-wrapper {
+  display: grid;
+  gap: 3em;
+  grid-template-columns: repeat(2, 1fr);
+  width: 75%;
+  margin-inline: auto;
+  margin-top: 10em;
+}
+
+.about-content {
+  display: grid;
+  align-content: center;
+  align-items: end;
+  text-align: start;
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+}
+
+.about-img {
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
