@@ -593,7 +593,7 @@
     width: 100%;
   }
   .skill-wrapper {
-    width: 90%;
+    width: 80%;
     margin: auto;
     z-index: 1;
     display: -ms-grid;
@@ -607,7 +607,7 @@
     text-align: center;
   }
   .skill-container img {
-    width: 30%;
+    width: 35%;
   }
   .projects {
     margin-top: 8em;

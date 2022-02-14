@@ -11,6 +11,7 @@ function Contact() {
             you like my work, please feel free to contact me via the form on the
             right. I would be happy to get in touch with you. Thank you!
           </p>
+          <img src="images/contact_bg.jpg" alt="Get In Touch" />
         </div>
         <div className="contact-form">
           <form action="#">

@@ -1,9 +1,10 @@
 .contact {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3em;
   margin: auto;
   margin-top: 10em;
-  width: 85%;
+  width: 83%;
 }
 
 .content {
@@ -21,15 +22,22 @@
   p {
     font-size: 1rem;
   }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 .contact-form {
   height: 700px;
   width: 500px;
-  background-color: #f2f2f2;
+  background: var(--primary-color);
   border-radius: 4px;
+  opacity: 0.8;
 
   form {
+    color: var(--text-white);
     padding: 2em;
 
     h2 {
@@ -49,22 +57,26 @@
       border: 0;
       outline: none;
       margin: 1.5em 0;
-      padding: 0.7em 1.5em;
-      border-bottom: 2px solid var(--primary-color);
+      padding: 0.6em 0.5em;
+      color: var(--text-white);
+      border-bottom: 2px solid var(--text-white);
       display: inline-block;
       box-sizing: border-box;
       background: transparent;
     }
 
     button {
+      margin-top: 2em;
       outline: none;
       border: 0;
       font-size: 1rem;
+      font-weight: 600;
       width: 8em;
       height: 3em;
       border-radius: 30px;
-      color: var(--text-white);
-      background: var(--primary-color);
+      color: var(--primary-color);
+      background: var(--text-white);
+      opacity: 1;
       box-shadow: -11px 12px 41px 0px rgba(0, 0, 0, 0.5);
       -webkit-box-shadow: -11px 12px 41px 0px rgba(0, 0, 0, 0.5);
       -moz-box-shadow: -11px 12px 41px 0px rgba(0, 0, 0, 0.5);
