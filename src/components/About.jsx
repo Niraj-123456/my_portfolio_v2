@@ -21,6 +21,12 @@ function About() {
             deleniti. Similique, impedit. Ipsum, labore officia laborum rem
             consequatur iusto esse nam!
           </p>
+          <div className="social-links">
+            <i className="fab fa-facebook"></i>
+            <i className="fab fa-instagram"></i>
+            <i className="fab fa-twitter"></i>
+            <i className="fab fa-github"></i>
+          </div>
         </div>
         <div className="about-img">
           <img src="images/about_me.png" alt="About_Me_Img" />
