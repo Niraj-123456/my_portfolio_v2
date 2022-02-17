@@ -3,7 +3,7 @@ import React from "react";
 function Skills() {
   return (
     <div className="container">
-      <h1 className="skill-heading">Technologies I Know</h1>
+      <h1 className="skill-heading">Technologies I Use</h1>
       <div className="skill-section">
         <div className="skill-wrapper">
           <div className="skill-container">
