@@ -1,0 +1,108 @@
+.contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 3em;
+  margin: auto;
+  margin-top: 10em;
+  width: 83%;
+}
+
+.content {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  text-align: start;
+  width: 80%;
+  margin-inline: auto;
+}
+
+.content h1 {
+  font-size: 2rem;
+}
+
+.content p {
+  font-size: 1rem;
+}
+
+.content img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contact-form {
+  width: 500px;
+  background: var(--primary-color);
+  border-radius: 4px;
+  opacity: 0.9;
+}
+
+.contact-form form {
+  color: var(--text-white);
+  padding: 2em;
+}
+
+.contact-form form h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.contact-form form label {
+  font-size: 0.9rem;
+}
+
+.contact-form form input[type="text"],
+.contact-form form input[type="email"],
+.contact-form form input[type="number"],
+.contact-form form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  margin: 1.5em 0;
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.6em 0.5em;
+  color: var(--text-white);
+  border-bottom: 2px solid var(--text-white);
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: transparent;
+}
+
+.contact-form form button {
+  margin-top: 2em;
+  outline: none;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 8em;
+  height: 3em;
+  border-radius: 30px;
+  color: var(--primary-color);
+  background: var(--text-white);
+  box-shadow: -11px 12px 41px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -11px 12px 41px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -11px 12px 41px 0px rgba(0, 0, 0, 0.5);
+  -webkit-transition: -webkit-transform 250ms ease-in-out 100ms;
+  transition: -webkit-transform 250ms ease-in-out 100ms;
+  transition: transform 250ms ease-in-out 100ms;
+  transition: transform 250ms ease-in-out 100ms, -webkit-transform 250ms ease-in-out 100ms;
+}
+
+.contact-form form button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+/*# sourceMappingURL=contact.css.map */

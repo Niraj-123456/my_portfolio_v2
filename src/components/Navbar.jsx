@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -6,49 +7,52 @@ function Navbar() {
       <a className="logo" href="#">
         Niraj Lama
       </a>
-      <p className="hamburger"></p>
+      <input type="checkbox" className="nav-toggle" id="nav-toggle" />
+      <label htmlFor="nav-toggle" className="nav-toggle-label" id="nav-toggle">
+        <span></span>
+      </label>
       <div className="main-links">
         <ul className="nav-links">
           <li>
-            <a className="link-item" href="#">
+            <NavLink className="link-item" to="/">
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="link-item" to="/portfolio">
               My Work
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a className="link-item" href="#">
+            <NavLink className="link-item" to="/aboutme">
               About Me
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a className="link-item" href="#">
-              Contact Me
-            </a>
+            <button>
+              <NavLink className="link-item" to="/contact">
+                Contact Me
+              </NavLink>
+            </button>
           </li>
         </ul>
       </div>
       <div className="social-links">
-        <ul className="nav-links">
-          <li>
-            <a className="link-item">
-              <img src="images/facebook-circular-logo.png" alt="Facebook" />
-            </a>
-          </li>
-          <li>
-            <a className="link-item">
-              <img src="images/instagram.svg" alt="Instagram" />
-            </a>
-          </li>
-          <li>
-            <a className="link-item">
-              <img src="images/twitter.png" alt="Twitter" />
-            </a>
-          </li>
-          <li>
-            <a className="link-item">
-              <img src="images/github.svg" alt="Github" />
-            </a>
-          </li>
-        </ul>
+        <a className="icon-link">
+          <i className="fab fa-facebook"></i>
+        </a>
+
+        <a className="icon-link">
+          <i className="fab fa-instagram"></i>
+        </a>
+
+        <a className="icon-link">
+          <i className="fab fa-twitter"></i>
+        </a>
+
+        <a className="icon-link">
+          <i className="fab fa-github"></i>
+        </a>
       </div>
     </nav>
   );

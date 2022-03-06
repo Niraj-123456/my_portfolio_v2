@@ -1,0 +1,31 @@
+.btn-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-container button {
+  margin-inline: 0.8em;
+  margin-block: 3em;
+  width: 11em;
+  outline: none;
+  border: 0;
+  padding: 1em;
+  background: var(--primary-color);
+  color: var(--text-white);
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  border-radius: 30px;
+  transition: transform 250ms ease-in-out 100ms;
+  box-shadow: -5px 9px 10px -1px rgba(117, 102, 102, 0.83);
+  -webkit-box-shadow: -5px 9px 10px -1px rgba(117, 102, 102, 0.83);
+  -moz-box-shadow: -5px 9px 10px -1px rgba(117, 102, 102, 0.83);
+}
+
+.btn-container button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 250ms ease-in-out;
+}
