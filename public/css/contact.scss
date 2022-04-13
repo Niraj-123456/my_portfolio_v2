@@ -35,7 +35,7 @@
   border-radius: 4px;
   opacity: 0.9;
 
-  form {
+  .form {
     color: var(--text-white);
     padding: 2em;
 
@@ -45,7 +45,9 @@
     }
 
     label {
+      display: block;
       font-size: 0.9rem;
+      margin-top: 1.5rem;
     }
 
     input[type="text"],
@@ -55,10 +57,10 @@
       width: 100%;
       border: 0;
       outline: none;
-      margin: 1.5em 0;
+      margin-top: 1.5em;
       font-size: 0.9rem;
       letter-spacing: 0.05rem;
-      padding: 0.6em 0.5em;
+      padding: 0.6em 0 0.5em 0;
       color: var(--text-white);
       border-bottom: 2px solid var(--text-white);
       display: inline-block;
@@ -87,6 +89,12 @@
       cursor: pointer;
       transform: scale(1.1);
       transition: transform 250ms ease-in-out;
+    }
+
+    .error__msg {
+      color: hotpink;
+      font-size: 12px;
+      margin-top: 5px;
     }
   }
 }

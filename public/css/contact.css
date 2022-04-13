@@ -43,31 +43,33 @@
   opacity: 0.9;
 }
 
-.contact-form form {
+.contact-form .form {
   color: var(--text-white);
   padding: 2em;
 }
 
-.contact-form form h2 {
+.contact-form .form h2 {
   text-align: center;
   font-size: 1.5rem;
 }
 
-.contact-form form label {
+.contact-form .form label {
+  display: block;
   font-size: 0.9rem;
+  margin-top: 1.5rem;
 }
 
-.contact-form form input[type="text"],
-.contact-form form input[type="email"],
-.contact-form form input[type="number"],
-.contact-form form textarea {
+.contact-form .form input[type="text"],
+.contact-form .form input[type="email"],
+.contact-form .form input[type="number"],
+.contact-form .form textarea {
   width: 100%;
   border: 0;
   outline: none;
-  margin: 1.5em 0;
+  margin-top: 1.5em;
   font-size: 0.9rem;
   letter-spacing: 0.05rem;
-  padding: 0.6em 0.5em;
+  padding: 0.6em 0 0.5em 0;
   color: var(--text-white);
   border-bottom: 2px solid var(--text-white);
   display: inline-block;
@@ -76,7 +78,7 @@
   background: transparent;
 }
 
-.contact-form form button {
+.contact-form .form button {
   margin-top: 2em;
   outline: none;
   border: 0;
@@ -96,7 +98,7 @@
   transition: transform 250ms ease-in-out 100ms, -webkit-transform 250ms ease-in-out 100ms;
 }
 
-.contact-form form button:hover {
+.contact-form .form button:hover {
   cursor: pointer;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -104,5 +106,11 @@
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+.contact-form .form .error__msg {
+  color: hotpink;
+  font-size: 12px;
+  margin-top: 5px;
 }
 /*# sourceMappingURL=contact.css.map */
