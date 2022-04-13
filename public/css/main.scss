@@ -24,6 +24,10 @@
   display: flex;
 }
 
+a {
+  text-decoration: none;
+}
+
 .nav-container .logo {
   display: block;
   color: var(--color-logo);
