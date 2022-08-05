@@ -1,0 +1,31 @@
+.skills-container {
+  margin-top: 50px;
+  width: 100%;
+  background: var(--color-purple);
+  padding-block: 50px;
+}
+
+.skills-container h1 {
+  color: var(--color-white);
+  text-align: center;
+}
+
+.skill-content {
+  width: 80%;
+  margin: auto;
+  padding-block: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+}
+
+.skill-content img {
+  width: 100px;
+  height: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: auto;
+}
+/*# sourceMappingURL=skills.css.map */

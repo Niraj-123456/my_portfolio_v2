@@ -1,0 +1,36 @@
+.featured-container {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.featured-content {
+  padding: 20px 100px;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    color: var(--color-gray);
+    padding-block: 20px;
+  }
+
+  img {
+    width: 500px;
+    height: 350px;
+    object-fit: contain;
+  }
+}
+
+.featured-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}

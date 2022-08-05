@@ -1,0 +1,57 @@
+.about-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-inline: 100px;
+  margin-block: 20px;
+}
+
+.about-content {
+  width: 50%;
+}
+
+.about-content h1 {
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+}
+
+.about-content p {
+  font-size: 1rem;
+  color: var(--color-gray);
+  padding-block: 20px;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links > i {
+  font-size: 2rem;
+  color: var(--color-pink);
+  cursor: pointer;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.social-links :hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.about-img {
+  width: 50%;
+  text-align: center;
+}
+
+.about-img img {
+  width: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center -100px;
+     object-position: center -100px;
+}
+/*# sourceMappingURL=about.css.map */
