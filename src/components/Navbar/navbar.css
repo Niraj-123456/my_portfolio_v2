@@ -80,4 +80,51 @@
 .nav-links :last-child a::before {
   display: none;
 }
+
+.toggle-icon,
+.reponsive-nav-links {
+  display: none;
+}
+
+@media screen and (max-width: 414px) {
+  .nav-container {
+    position: relative;
+    box-shadow: -4px 4px 6px -1px rgba(255, 255, 255, 0.5);
+    -webkit-box-shadow: -4px 4px 6px -1px rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: -4px 4px 6px -1px rgba(255, 255, 255, 0.5);
+  }
+  .nav-content {
+    padding: 10px 20px;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .toggle-icon {
+    display: block;
+    color: var(--color-white);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .nav-links {
+    display: none;
+  }
+  .responsive-nav-links {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    padding-block: 20px;
+    background: var(--color-pink);
+  }
+  .responsive-nav-links li {
+    padding: 10px 20px;
+  }
+  .responsive-nav-links li a {
+    color: var(--color-white);
+  }
+  .responsive-nav-links :hover,
+  .responsive-nav-links .active {
+    background: var(--color-purple);
+  }
+}
 /*# sourceMappingURL=navbar.css.map */

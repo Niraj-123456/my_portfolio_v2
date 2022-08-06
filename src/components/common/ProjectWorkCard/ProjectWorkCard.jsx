@@ -1,7 +1,7 @@
 import React from "react";
 import "./projectworkcard.css";
 
-import Button from "../Button";
+import Button from "../Button/Button";
 
 function ProjectWorkCard({ project }) {
   const handleClick = () => {

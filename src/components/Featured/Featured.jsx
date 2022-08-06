@@ -1,7 +1,7 @@
 import React from "react";
 import "./featured.css";
 
-import Button from "../common/Button";
+import Button from "../common/Button/Button";
 
 function Featured() {
   return (
@@ -26,7 +26,6 @@ function Featured() {
             style={{
               background: "var(--color-purple-3)",
               color: "white",
-              fontSize: "1rem",
             }}
           />
           <Button
@@ -34,7 +33,6 @@ function Featured() {
             style={{
               background: "var(--color-purple-3)",
               color: "white",
-              fontSize: "1rem",
             }}
           />
         </div>

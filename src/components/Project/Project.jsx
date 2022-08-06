@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./projects.css";
+import "./project.css";
 
-import Button from "../common/Button";
+import Button from "../common/Button/Button";
 
-function Projects() {
+function Project() {
   return (
-    <div className="projects-container">
+    <div className="project-container">
       <h1>More of my projects</h1>
-      <div className="projects-content">
-        <div className="projects">
+      <div className="project-content">
+        <div className="project">
           <h1>My first javascript app</h1>
           <p>
             Sunt id eiusmod mollit dolor fugiat deserunt. Anim aute officia
@@ -18,18 +18,17 @@ function Projects() {
             consectetur.
           </p>
           <img src="images/javascript_pj.png" alt="javascript-app" />
-          <div className="button-container">
-            <Button
-              label="View Project"
-              style={{
-                background: "var(--color-purple-3)",
-                color: "white",
-                fontSize: "1rem",
-              }}
-            />
-          </div>
+
+          <Button
+            label="View Project"
+            style={{
+              background: "var(--color-purple-3)",
+              color: "white",
+              marginTop: "50px",
+            }}
+          />
         </div>
-        <div className="projects">
+        <div className="project">
           <h1>Disney Plus Clone</h1>
           <p>
             Sunt id eiusmod mollit dolor fugiat deserunt. Anim aute officia
@@ -38,16 +37,15 @@ function Projects() {
             consectetur.
           </p>
           <img src="images/disney_plus_clone.png" alt="disney-plus-clone" />
-          <div className="button-container">
-            <Button
-              label="View Project"
-              style={{
-                background: "var(--color-purple-3)",
-                color: "white",
-                fontSize: "1rem",
-              }}
-            />
-          </div>
+
+          <Button
+            label="View Project"
+            style={{
+              background: "var(--color-purple-3)",
+              color: "white",
+              marginTop: "50px",
+            }}
+          />
         </div>
 
         <div className="view-more">
@@ -58,4 +56,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Project;

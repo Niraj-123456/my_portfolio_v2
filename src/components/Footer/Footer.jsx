@@ -1,26 +1,26 @@
 import React from "react";
 import "./footer.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagram,
+  faTwitter,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
+
 function Footer() {
   return (
     <div className="footer-container">
-      <div className="copyright">copyright &copy;2021</div>
-      <div className="social-links">
-        <a href="/#" className="social-icons">
-          <i className="fab fa-facebook"></i>
-        </a>
+      <p className="copyright">copyright &copy;2021</p>
+      <div className="footer-social-links">
+        <FontAwesomeIcon icon={faFacebook} className="footer-social-icon" />
 
-        <a href="/#" className="social-icons">
-          <i className="fab fa-instagram"></i>
-        </a>
+        <FontAwesomeIcon icon={faInstagram} className="footer-social-icon" />
 
-        <a href="/#" className="social-icons">
-          <i className="fab fa-twitter"></i>
-        </a>
+        <FontAwesomeIcon icon={faTwitter} className="footer-social-icon" />
 
-        <a href="/#" className="social-icons">
-          <i className="fab fa-github"></i>
-        </a>
+        <FontAwesomeIcon icon={faGithub} className="footer-social-icon" />
       </div>
     </div>
   );

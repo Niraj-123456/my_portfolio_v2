@@ -24,3 +24,14 @@
     margin: auto;
   }
 }
+
+@media screen and (max-width: 414px) {
+  .skill-content {
+    gap: 40px;
+
+    img {
+      width: 50px;
+      height: 40px;
+    }
+  }
+}

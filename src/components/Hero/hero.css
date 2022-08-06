@@ -60,4 +60,32 @@
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
+
+@media screen and (max-width: 414px) {
+  .hero-content {
+    padding: 50px 20px;
+  }
+  .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-text h1 {
+    font-size: 1.85rem;
+  }
+  .hero-text p {
+    font-size: 0.85rem;
+  }
+  .hero-image {
+    display: none;
+  }
+  .contact-button {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 30px;
+  }
+  .contact-button button {
+    padding: 10px 15px;
+  }
+}
 /*# sourceMappingURL=hero.css.map */

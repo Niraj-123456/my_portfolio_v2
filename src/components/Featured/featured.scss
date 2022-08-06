@@ -24,13 +24,36 @@
 
   img {
     width: 500px;
-    height: 350px;
+    height: 100%;
     object-fit: contain;
   }
 }
 
 .featured-buttons {
+  margin-top: 20px;
   display: flex;
   gap: 20px;
   justify-content: center;
+}
+
+@media screen and (max-width: 414px) {
+  .featured-content {
+    padding: 50px 20px;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
 }

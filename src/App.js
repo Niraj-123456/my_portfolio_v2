@@ -12,7 +12,7 @@ import { projectData } from "./data";
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="app-container">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

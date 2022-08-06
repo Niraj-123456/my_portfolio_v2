@@ -25,12 +25,13 @@
 
 .featured-content img {
   width: 500px;
-  height: 350px;
+  height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
 .featured-buttons {
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,5 +39,23 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (max-width: 414px) {
+  .featured-content {
+    padding: 50px 20px;
+  }
+  .featured-content h1 {
+    font-size: 2.5rem;
+  }
+  .featured-content h2 {
+    font-size: 1.5rem;
+  }
+  .featured-content p {
+    font-size: 0.9rem;
+  }
+  .featured-content img {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=featured.css.map */
