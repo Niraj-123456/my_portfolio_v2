@@ -13,14 +13,35 @@ function Footer() {
   return (
     <div className="footer-container">
       <p className="copyright">copyright &copy;2021</p>
+
       <div className="footer-social-links">
-        <FontAwesomeIcon icon={faFacebook} className="footer-social-icon" />
+        <a href="/#">
+          <FontAwesomeIcon
+            icon={faFacebook}
+            className="footer-social-link-item"
+          />
+        </a>
 
-        <FontAwesomeIcon icon={faInstagram} className="footer-social-icon" />
+        <a href="/#">
+          <FontAwesomeIcon
+            icon={faInstagram}
+            className="footer-social-link-item"
+          />
+        </a>
 
-        <FontAwesomeIcon icon={faTwitter} className="footer-social-icon" />
+        <a href="/#">
+          <FontAwesomeIcon
+            icon={faTwitter}
+            className="footer-social-link-item"
+          />
+        </a>
 
-        <FontAwesomeIcon icon={faGithub} className="footer-social-icon" />
+        <a href="/#">
+          <FontAwesomeIcon
+            icon={faGithub}
+            className="footer-social-link-item"
+          />
+        </a>
       </div>
     </div>
   );

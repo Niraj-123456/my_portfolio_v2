@@ -7,10 +7,10 @@
   border-radius: 9999px;
   cursor: pointer;
   transition: all 250ms ease-in-out;
+}
 
-  :hover {
-    transform: scale(1.1);
-  }
+.custom-button:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 414px) {

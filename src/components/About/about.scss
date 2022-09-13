@@ -1,13 +1,16 @@
 .about-container {
   width: 100%;
-  display: flex;
-  align-items: center;
   padding-inline: 100px;
   margin-block: 20px;
+
+  .about-wrapper {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .about-content {
-  width: 50%;
+  width: 100%;
   h1 {
     font-size: 2rem;
     letter-spacing: 0.02em;
@@ -21,6 +24,8 @@
 
 .social-links {
   margin-top: 20px;
+  display: flex;
+  gap: 20px;
 
   > i {
     font-size: 2rem;
@@ -34,11 +39,21 @@
 }
 
 .about-img {
-  width: 50%;
+  width: 100%;
   text-align: center;
   img {
     width: 500px;
     object-fit: contain;
     object-position: center -100px;
+  }
+}
+
+.google__maps {
+  width: 100%;
+  margin: auto;
+  margin-block: 50px;
+
+  h1 {
+    margin-bottom: 20px;
   }
 }

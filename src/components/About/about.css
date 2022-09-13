@@ -1,17 +1,20 @@
 .about-container {
   width: 100%;
+  padding-inline: 100px;
+  margin-block: 20px;
+}
+
+.about-container .about-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-inline: 100px;
-  margin-block: 20px;
 }
 
 .about-content {
-  width: 50%;
+  width: 100%;
 }
 
 .about-content h1 {
@@ -27,6 +30,10 @@
 
 .social-links {
   margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
 }
 
 .social-links > i {
@@ -43,7 +50,7 @@
 }
 
 .about-img {
-  width: 50%;
+  width: 100%;
   text-align: center;
 }
 
@@ -53,5 +60,15 @@
      object-fit: contain;
   -o-object-position: center -100px;
      object-position: center -100px;
+}
+
+.google__maps {
+  width: 100%;
+  margin: auto;
+  margin-block: 50px;
+}
+
+.google__maps h1 {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=about.css.map */

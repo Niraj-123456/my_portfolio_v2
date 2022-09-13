@@ -8,20 +8,21 @@ function ProjectWorkCard({ project }) {
     console.log("clicked");
   };
   return (
-    <div className="card-container">
-      <div className="card-media">
-        <img src={project.image} alt={project.name} />
-      </div>
-      <div className="card-content">
-        <h1 className="card-title">{project.name}</h1>
-        <p className="card-description">{project.description}</p>
-      </div>
-      <div className="card-button">
-        <Button
-          label="View"
-          style={{ color: "var(--color-pink)" }}
-          onClick={handleClick}
-        />
+    <div className="card__container">
+      <img src={project.image} alt={project.name} className="card__media" />
+
+      <div className="card__overlay">
+        <div className="card__content">
+          <h1 className="card__title">{project.name}</h1>
+          <p className="card__description">{project.description}</p>
+          <div className="card__button">
+            <Button
+              label="View"
+              style={{ color: "var(--color-pink)" }}
+              onClick={handleClick}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

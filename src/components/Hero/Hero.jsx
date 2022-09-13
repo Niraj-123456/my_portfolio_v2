@@ -13,8 +13,12 @@ function Hero() {
             ChooseMyBasket.com.
           </p>
           <div className="contact-button">
-            <button>Contact Me</button>
-            <button>Hire Me!</button>
+            <button>
+              <a href="/contact">Contact Me</a>
+            </button>
+            <button>
+              <a href="/#">Hire Me!</a>
+            </button>
           </div>
         </div>
         <div className="hero-image">

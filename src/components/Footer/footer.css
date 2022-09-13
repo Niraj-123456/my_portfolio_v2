@@ -25,15 +25,21 @@
   gap: 20px;
 }
 
-.footer-social-icon {
-  color: var(--color-white);
+.footer-social-links a {
   font-size: 1.5rem;
+  color: var(--color-white);
   cursor: pointer;
+  z-index: 1;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
+  border-radius: 50%;
 }
 
-.footer-social-icon :hover {
+.footer-social-links a .footer-social-link-item {
+  pointer-events: none;
+}
+
+.footer-social-links :hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
