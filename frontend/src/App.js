@@ -11,7 +11,7 @@ import { projectData } from "./data";
 
 function App() {
   return (
-    <Router basename={process.env.REACT_APP_BASE_URL}>
+    <Router basename="/my_portfolio_v2">
       <div className="app-container">
         <Navbar />
         <Routes>

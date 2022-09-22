@@ -47,10 +47,11 @@
   font-size: 1.15rem;
   color: var(--color-white);
   position: relative;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
 }
 
-.nav-links li .active::before,
-.nav-links li :hover::before {
+.nav-links li ::before {
   content: "";
   background: var(--color-white);
   height: 4px;
@@ -58,6 +59,14 @@
   position: absolute;
   left: 0;
   bottom: -15px;
+  opacity: 0;
+  -webkit-transition: opacity 350ms ease-in-out;
+  transition: opacity 350ms ease-in-out;
+}
+
+.nav-links li .active::before,
+.nav-links li :hover::before {
+  opacity: 1;
 }
 
 .nav-links :last-child a {

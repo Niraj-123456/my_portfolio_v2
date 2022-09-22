@@ -32,10 +32,10 @@
       font-size: 1.15rem;
       color: var(--color-white);
       position: relative;
+      transition: all 250ms ease-in;
     }
 
-    .active::before,
-    :hover::before {
+    ::before {
       content: "";
       background: var(--color-white);
       height: 4px;
@@ -43,6 +43,13 @@
       position: absolute;
       left: 0;
       bottom: -15px;
+      opacity: 0;
+      transition: opacity 350ms ease-in-out;
+    }
+
+    .active::before,
+    :hover::before {
+      opacity: 1;
     }
   }
 
