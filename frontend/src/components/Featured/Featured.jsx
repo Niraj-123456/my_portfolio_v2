@@ -10,14 +10,13 @@ function Featured() {
         <h1>Featured Project</h1>
         <h2>Social Media App (My Version Of Facebook)</h2>
         <p>
-          loNon adipisicing culpa dolore pariatur esse mollit amet aute ea
-          consequat. Deserunt adipisicing Lorem ea adipisicing officia eu minim
-          ipsum laboris sit deserunt proident ipsum. Irure magna cillum
-          consectetur do excepteur id quis id. Et elit cupidatat nostrud qui
-          minim sunt in. Qui officia enim laborum sint nulla.
+          It is a basic blog app built with React Js and Firebase with features
+          like adding, editing and deleting blogs by the user. Users can
+          register and log in to the system. Authentication has been implemented
+          using the firebase default auth.
         </p>
         <img
-          src="images/social_media_app_screenshot.jpg"
+          src="images/social_media_app_screenshot.JPG"
           alt="featured-project"
         />
         <div className="featured-buttons">

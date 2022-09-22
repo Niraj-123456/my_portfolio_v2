@@ -65,6 +65,8 @@
   border-radius: 9999px;
   background: var(--color-white);
   color: var(--color-pink);
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
   box-shadow: -3px 7px 13px 1px rgba(0, 0, 0, 0.44);
   -webkit-box-shadow: -3px 7px 13px 1px rgba(0, 0, 0, 0.44);
   -moz-box-shadow: -3px 7px 13px 1px rgba(0, 0, 0, 0.44);
