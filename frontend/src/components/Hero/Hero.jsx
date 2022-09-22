@@ -23,7 +23,7 @@ function Hero() {
         </div>
         <div className="hero-image">
           <img
-            src="/images/avatar_2.png"
+            src="images/avatar_2.png"
             alt="avatar"
             width="100%"
             height="400px"
