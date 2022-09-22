@@ -11,14 +11,14 @@ import { projectData } from "./data";
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.REACT_APP_BASE_URL}>
       <div className="app-container">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<MyWork data={projectData} />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/aboutme" element={<About />} />
+          <Route path="/" element={<Home />} />
         </Routes>
         <Footer />
       </div>
