@@ -1,0 +1,61 @@
+.card__container {
+  position: relative;
+  width: 310px;
+  background: var(--color-purple-2);
+  border-radius: 5px;
+  overflow: hidden;
+  color: var(--color-white);
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  box-shadow: -4px 8px 17px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -4px 8px 17px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -4px 8px 17px -4px rgba(0, 0, 0, 0.75);
+}
+
+.card__container .card__media {
+  width: 100%;
+  height: 375px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card__container .card__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: none;
+  cursor: default;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background: var(--color-pink);
+}
+
+.card__container .card__content {
+  padding: 30px 20px;
+}
+
+.card__container .card__title {
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+}
+
+.card__container .card__description {
+  font-size: 0.85rem;
+  padding-top: 5px;
+  text-align: justify;
+}
+
+.card__container .card__button {
+  margin-top: 20px;
+}
+
+.card__container:hover .card__overlay {
+  opacity: 1;
+}
+/*# sourceMappingURL=projectworkcard.css.map */

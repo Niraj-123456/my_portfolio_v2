@@ -1,0 +1,37 @@
+.skills-container {
+  margin-top: 50px;
+  width: 100%;
+  background: var(--color-purple);
+  padding-block: 50px;
+  h1 {
+    color: var(--color-white);
+    text-align: center;
+  }
+}
+
+.skill-content {
+  width: 80%;
+  margin: auto;
+  padding-block: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+
+  img {
+    width: 100px;
+    height: 80px;
+    object-fit: contain;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .skill-content {
+    gap: 40px;
+
+    img {
+      width: 50px;
+      height: 40px;
+    }
+  }
+}
