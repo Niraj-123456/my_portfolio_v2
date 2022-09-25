@@ -1,0 +1,21 @@
+.custom-button {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 15px 30px;
+  letter-spacing: 0.05em;
+  border: 0;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+.custom-button:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 414px) {
+  .custom-button {
+    padding: 10px 15px;
+    font-size: 0.85rem;
+  }
+}

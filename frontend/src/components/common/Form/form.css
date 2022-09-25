@@ -1,0 +1,72 @@
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: var(--color-white);
+}
+
+.form h2 {
+  font-size: 1.85rem;
+  margin-bottom: 30px;
+}
+
+.form label {
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 5px;
+}
+
+.form input,
+.form textarea {
+  outline: none;
+  border: 0;
+  padding-left: 16px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form input {
+  height: 42px;
+}
+
+.form textarea {
+  padding-block: 10px;
+}
+
+.form button {
+  color: var(--color-white);
+  background: var(--color-pink);
+  height: 42px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border: 0;
+  cursor: pointer;
+}
+
+.form button:disabled {
+  background: var(--color-purple-3);
+}
+
+.input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.error__msg {
+  font-size: 0.75rem;
+  color: red;
+  margin-top: 5px;
+}
+/*# sourceMappingURL=form.css.map */

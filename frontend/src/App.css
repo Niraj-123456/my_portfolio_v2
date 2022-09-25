@@ -1,0 +1,31 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-purple: #6700ee;
+  --color-purple-2: #6b18da;
+  --color-purple-3: #b87aff;
+  --color-green: #08f7e8;
+  --color-white: #ffffff;
+  --color-pink: #af06ff;
+  --color-black: #000000;
+  --color-gray: #3b3b3b;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.app-container {
+  width: 100%;
+}
