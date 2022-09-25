@@ -7,7 +7,7 @@ export const projectData = [
     link: "/",
   },
   {
-    image: "images/social_media_app_screenshot.jpg",
+    image: "images/social_media_app_screenshot.JPG",
     name: "Blog App",
     description:
       "It is a basic blog app built with React Js and Firebase with features like adding, editing and deleting blogs by the user. Users can register and log in to the system. Authentication has been implemented using the firebase default auth. ",

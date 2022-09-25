@@ -1,5 +1,5 @@
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   Navigate,
@@ -24,7 +24,7 @@ function App() {
           <Route path="/portfolio" element={<MyWork data={projectData} />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/aboutme" element={<About />} />
-          <Route path="/" element={<Home />} />
+          <Route index path="/" element={<Home />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         <Footer />
