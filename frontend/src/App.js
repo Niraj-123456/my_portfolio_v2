@@ -1,5 +1,5 @@
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Routes,
   Route,
   Navigate,
@@ -17,7 +17,7 @@ import { projectData } from "./data";
 
 function App() {
   return (
-    <Router basename="/my_portfolio_v2">
+    <Router>
       <div className="app-container">
         <Navbar />
         <Routes>
