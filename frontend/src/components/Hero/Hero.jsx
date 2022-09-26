@@ -17,7 +17,9 @@ function Hero() {
               <a href="/contact">Contact Me</a>
             </button>
             <button>
-              <a href="/#">Hire Me!</a>
+              <a href="Niraj_Lama.pdf" download="Niraj_Lama.pdf">
+                Hire Me!
+              </a>
             </button>
           </div>
         </div>
