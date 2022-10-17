@@ -71,4 +71,53 @@
 .google__maps h1 {
   margin-bottom: 20px;
 }
+
+@media screen and (max-width: 414px) {
+  .about-container {
+    padding-inline: 20px;
+    margin-top: 50px;
+  }
+  .about-container .about-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-container .about-wrapper .about-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-container .about-wrapper .about-content > h1 {
+    text-transform: uppercase;
+    color: var(--color-pink);
+  }
+  .about-container .about-wrapper .about-content p {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .about-container .about-wrapper .about-content .social-links {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .about-container .about-wrapper .about-img img {
+    width: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .google__maps > h1 {
+    color: var(--color-pink);
+  }
+}
 /*# sourceMappingURL=about.css.map */

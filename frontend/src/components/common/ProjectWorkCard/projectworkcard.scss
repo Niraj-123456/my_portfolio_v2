@@ -56,3 +56,15 @@
 .card__container:hover .card__overlay {
   opacity: 1;
 }
+
+@media screen and (max-width: 414px) {
+  .card__container {
+    .card__media {
+      opacity: 0.5;
+    }
+    .card__overlay {
+      opacity: 0.8;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
+}

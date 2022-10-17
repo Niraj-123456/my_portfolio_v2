@@ -132,14 +132,13 @@
     left: 0;
     padding-block: 20px;
     background: var(--color-pink);
-  }
-  .responsive-nav-links li {
-    padding: 10px 20px;
+    z-index: 1;
   }
   .responsive-nav-links li a {
     color: var(--color-white);
+    display: block;
+    padding: 10px 20px;
   }
-  .responsive-nav-links :hover,
   .responsive-nav-links .active {
     background: var(--color-purple);
   }

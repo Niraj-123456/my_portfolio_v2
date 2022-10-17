@@ -116,15 +116,15 @@
     left: 0;
     padding-block: 20px;
     background: var(--color-pink);
+    z-index: 1;
 
     li {
-      padding: 10px 20px;
-
       a {
         color: var(--color-white);
+        display: block;
+        padding: 10px 20px;
       }
     }
-    :hover,
     .active {
       background: var(--color-purple);
     }

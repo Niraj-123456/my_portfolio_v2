@@ -24,3 +24,31 @@
   background: var(--color-purple-2);
   padding: 50px 100px;
 }
+
+@media screen and (max-width: 414px) {
+  .contact-content {
+    flex-direction: column;
+    margin-top: 50px;
+
+    .left-content {
+      width: 100%;
+      padding-top: 0;
+      align-items: center;
+      padding-inline: 20px;
+
+      > p {
+        font-size: 0.9rem;
+        text-align: center;
+      }
+
+      > img {
+        width: 350px;
+      }
+    }
+
+    .contact-form {
+      width: 100%;
+      padding: 50px 40px;
+    }
+  }
+}

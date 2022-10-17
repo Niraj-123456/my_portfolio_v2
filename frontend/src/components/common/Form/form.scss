@@ -57,3 +57,11 @@
   color: red;
   margin-top: 5px;
 }
+
+@media screen and (max-width: 414px) {
+  .form {
+    > h2 {
+      text-align: center;
+    }
+  }
+}

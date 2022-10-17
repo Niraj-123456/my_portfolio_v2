@@ -32,4 +32,33 @@
   background: var(--color-purple-2);
   padding: 50px 100px;
 }
+
+@media screen and (max-width: 414px) {
+  .contact-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
+  }
+  .contact-content .left-content {
+    width: 100%;
+    padding-top: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-inline: 20px;
+  }
+  .contact-content .left-content > p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .contact-content .left-content > img {
+    width: 350px;
+  }
+  .contact-content .contact-form {
+    width: 100%;
+    padding: 50px 40px;
+  }
+}
 /*# sourceMappingURL=contact.css.map */

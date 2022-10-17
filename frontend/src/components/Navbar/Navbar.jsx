@@ -49,17 +49,25 @@ function Navbar() {
           className="responsive-nav-links"
           style={showMainLinks ? { display: "block" } : { display: "none" }}
         >
-          <li className="active">
-            <a href="/">Home</a>
+          <li>
+            <NavLink to="/" onClick={() => setShowMainLinks(false)}>
+              Home
+            </NavLink>
           </li>
           <li>
-            <a href="/portfolio">My Work</a>
+            <NavLink to="/portfolio" onClick={() => setShowMainLinks(false)}>
+              My Work
+            </NavLink>
           </li>
           <li>
-            <a href="/aboutme">About Me</a>
+            <NavLink to="/aboutme" onClick={() => setShowMainLinks(false)}>
+              About Me
+            </NavLink>
           </li>
           <li>
-            <a href="/contact">Contact Me</a>
+            <NavLink to="/contact" onClick={() => setShowMainLinks(false)}>
+              Contact Me
+            </NavLink>
           </li>
         </ul>
       </div>

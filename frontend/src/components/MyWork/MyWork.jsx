@@ -7,6 +7,7 @@ function MyWork({ data }) {
   return (
     <div className="work-container">
       <div className="work-content">
+        <h1>Portfolio</h1>
         {data?.map((d, index) => (
           <ProjectWorkCard key={index} project={d} />
         ))}
